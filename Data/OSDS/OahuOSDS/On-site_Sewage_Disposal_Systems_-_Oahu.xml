@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>On-site Sewage Disposal Systems - Oahu</title>
+                <onlink>https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/22</onlink>
+                <onlink>https://files.hawaii.gov/dbedt/op/gis/data/osds_oah.pdf</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>[Metadata] On-site sewage disposal systems (osds) for the 
+island of Oahu as of 2008.  Approximate location, type, effluent, 
+nitrogen and phosphorus flux of on-site sewage disposal systems.Source:  State of Hawaii Department of Health, May, 2017.Developed in 2008 as part of the Hawaii 
+State Department of Health source water protection program to assess the
+ health and environmental risks posed by on-site sewage disposal 
+systems.For additional information, please refer to complete metadata at https://files.hawaii.gov/dbedt/op/gis/data/osds_oah.pdf or contact Hawaii Statewide GIS Program, Office of Planning and Sustainable Development, State of Hawaii; PO Box 2359, Honolulu, Hi. 96804; (808) 587-2846; email: gis@hawaii.gov; Website: https://planning.hawaii.gov/gis.</abstract>
+            <purpose>On-site Sewage Disposal Systems for the island of Oahu, as of 2008.</purpose>
+        </descript>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Infrastructure</themekey>
+                <themekey>Sewage</themekey>
+                <themekey>Water Quality</themekey>
+                <themekey>Cesspools</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>State of Hawaii Terms of Use. 
+
+
+
+The
+ contents of this web page are public domain and to the extent indicated
+ otherwise in the Terms of Use, are exempt from Terms of Use policy 
+restrictions.There are no expressed warranties associated with the 
+release of this data or product. Specifically, no warranty is made that 
+the GIS data or any subsequent updates will be error free and no 
+warranty is made regarding the positional or thematic accuracy of the 
+GIS data. The GIS data and any features depicted do not represent or 
+confer any legal rights, privileges, benefits, boundaries or claims of 
+any kind. The Office of Planning and Sustainable Development encourages users to report any 
+discrepancies or errors found. 
+ Contact: Hawaii Statewide GIS Program, Office of Planning and 
+Sustainable Development, State of Hawaii; PO Box 2359, Honolulu, Hi. 
+96804; (808) 587-2846; email: gis@hawaii.gov. Website: https://planning.hawaii.gov/gis.</useconst>
+        <datacred>Hawaii State Department of Health; Hawaii Statewide GIS Program</datacred>
+    </idinfo>
+    <metainfo>
+        <metd>20201101</metd>
+        <metc>
+            <cntinfo>
+                <!--no contact person or organization name available-->
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
