@@ -1,0 +1,1803 @@
+[Aimee Schriber] 11:03:30
+Hi, Chris.
+
+[ChrisShuler] 11:03:31
+Amy? Hey, Adam.
+
+[ChrisShuler] 11:03:42
+Oh, are you there? You were there.
+
+[ChrisShuler] 11:03:47
+How y'all doing?
+
+[Aimee Schriber] 11:03:52
+Pretty good.
+
+[ChrisShuler] 11:03:54
+Cool. Um… Yeah, so today… We were meeting to… uh, work on the code, right?
+
+[ChrisShuler] 11:04:05
+And this is in reference to… the script that you… Wrote Autumn.
+
+[Autumn McCarter] 11:04:14
+Yeah.
+
+[ChrisShuler] 11:04:14
+Okay, sorry, yeah, I've been doing lots of meetings, so I'm, like, all over the place, but… Yeah, so remind me… yeah, remind me where we're at.
+
+[ChrisShuler] 11:04:25
+Give me a rundown.
+
+[Autumn McCarter] 11:04:26
+Um, with the script? Yeah, I, uh, I was having issues when I tried including the laterals.
+
+[Autumn McCarter] 11:04:35
+With it, but I was working on it over the weekend.
+
+[Autumn McCarter] 11:04:38
+I got that to work, but then it was telling me that there was no overlap.
+
+[Autumn McCarter] 11:04:44
+With the TMKs, the OSDS, and the sewer billing, which I know is.
+
+[Autumn McCarter] 11:04:49
+Not right, because there definitely were some overlap. So now… That's where I'm at, trying to fix it.
+
+[ChrisShuler] 11:04:55
+Okay. Well, do you want to… why don't you run me… through, like, what… what are you doing, what are you trying to do? What are you starting with? Where are you getting to?
+
+[Autumn McCarter] 11:05:05
+Yeah. Okay, yeah, so…
+
+[ChrisShuler] 11:05:05
+My brain is somewhere else, just so you know. Like, I was just on another meeting about something else, and so… Please remind me where… how I can help.
+
+[Autumn McCarter] 11:05:13
+Okay, so… trying to clean the data, and I wanted to make it into, like.
+
+[Autumn McCarter] 11:05:21
+What's it called? The… the function so that it can be reused.
+
+[Autumn McCarter] 11:05:27
+With other data sets. And so I was just trying to… I, like, asked ChatGPT to help me.
+
+[Autumn McCarter] 11:05:33
+Figure out where the TMK. Column for the OSCS matches sewer billing.
+
+[Autumn McCarter] 11:05:42
+And then where… it overlaps.
+
+[Autumn McCarter] 11:05:48
+Near the laterals, but then I included, like. A buffer that you can customize, because I wasn't sure.
+
+[Autumn McCarter] 11:05:55
+How close to the lateral you wanted to consider. Selecting those OCS, so I have just, like, this huge.
+
+[Autumn McCarter] 11:06:03
+Function in the script. Where you put the path to the files.
+
+[Autumn McCarter] 11:06:08
+And then it should, once it's done, work, and then be able to be used for other months.
+
+[ChrisShuler] 11:06:15
+Okay.
+
+[Aimee Schriber] 11:06:16
+Autumn, can I… ask, um… In this script, are you trying to intersect?
+
+[Aimee Schriber] 11:06:22
+The lateral shapefile with the OSDS point themselves, or with the parcel shapefile.
+
+[Autumn McCarter] 11:06:31
+I think the points themselves.
+
+[Aimee Schriber] 11:06:37
+Okay, because I think that… could potentially be your issue, um, because I don't think many of the laterals.
+
+[Aimee Schriber] 11:06:45
+Reach into the center of… the parcel, which is where most of the OSDS are located, I think.
+
+[Aimee Schriber] 11:06:51
+And so when I did it manually, I… think I intersected the laterals with the parcels, and then intersected the OSDS with the parcels that.
+
+[Aimee Schriber] 11:07:04
+Contained laterals.
+
+[Autumn McCarter] 11:07:10
+Okay. I think I'm a little confused about… The difference between the parcels.
+
+[Autumn McCarter] 11:07:19
+Oh, that's dance polls, which is… departments.
+
+[Aimee Schriber] 11:07:25
+Oh, I know. Um, TMK Parcels.
+
+[Autumn McCarter] 11:07:32
+Gotcha.
+
+[ChrisShuler] 11:07:40
+Okay, so first things first, let's. Let's revise what we're doing here.
+
+[Aimee Schriber] 11:07:45
+Thanks for hearing.
+
+[ChrisShuler] 11:07:47
+Um, so Autumn… Can you get to… Jupiter Notebook with yours. Do you have… Um, you have ArcPro installed, right?
+
+[Autumn McCarter] 11:08:00
+Yeah.
+
+[ChrisShuler] 11:08:02
+Okay, so can you see… I'm sharing screen. Can you see when I click my start button?
+
+[ChrisShuler] 11:08:09
+Can you see my little start menu? Like Google Chrome and stuff like that.
+
+[Autumn McCarter] 11:08:11
+Yeah.
+
+[ChrisShuler] 11:08:14
+So on here, I have a couple different. Pythons. I don't know how you installed yours. This is Anacondo. This is, like, a regular Python installation.
+
+[ChrisShuler] 11:08:26
+And then if you go into the ArcGIS folder. What you'll often see is you'll often see a bunch of junk.
+
+[ChrisShuler] 11:08:33
+And then, can you see this Jupyter notebook here? Have you been using these?
+
+[Autumn McCarter] 11:08:37
+Yeah.
+
+[Autumn McCarter] 11:08:42
+Sorry, what did you say? I use… I think when I… installed… ArcGIS, it opened… Or, like, get put a Jupyter notebook.
+
+[ChrisShuler] 11:08:44
+Have you been using these at all?
+
+[Autumn McCarter] 11:08:59
+But on my home screen, I've just been using that one.
+
+[ChrisShuler] 11:09:02
+Okay. Good.
+
+[Autumn McCarter] 11:09:02
+I assumed that was the right… the one that's with ArcGIS.
+
+[ChrisShuler] 11:09:07
+Yeah, so what we're gonna do is we're gonna open this up.
+
+[ChrisShuler] 11:09:10
+And it's gonna pop open one of these things. So this is how we're going to do all of our… coding stuff.
+
+[ChrisShuler] 11:09:18
+For this project. So that it's consistent across environments, and that it works. Basically, we're using.
+
+[ChrisShuler] 11:09:25
+The ArcGIS environment. Which is really nice, because… It's actually, um… kind of consistent things.
+
+[ChrisShuler] 11:09:34
+I believe I am actually in this environment right here. And actually, you can tell, when you open a notebook.
+
+[ChrisShuler] 11:09:42
+So… I'm going to create a… Python 3, so when I push that button, it'll probably open up a new one of these things.
+
+[ChrisShuler] 11:09:54
+This shows all of your little… folders and things like that.
+
+[ChrisShuler] 11:09:58
+You can go to a folder and you can open up a new Jupyter notebook. And so I'm opening up this Jupyter notebook.
+
+[ChrisShuler] 11:10:05
+This is something I'm working on separately. But it has… oh, and it doesn't have the… Let me just pull open something else here so that.
+
+[ChrisShuler] 11:10:18
+Um, okay… Okay, let's still doing lots of stuff.
+
+[ChrisShuler] 11:10:25
+Um.
+
+[ChrisShuler] 11:10:31
+I need my… where are my functions? Oh, I'm in the wrong place.
+
+[ChrisShuler] 11:10:38
+Give me one second, I just want to get some stuff I can copy and paste here.
+
+[ChrisShuler] 11:10:52
+Okay, so… Couple things that you want to copy in.
+
+[ChrisShuler] 11:10:58
+If you open up… And so this is what just opened up. We know that this kernel.
+
+[ChrisShuler] 11:11:05
+Is running in the ArcPy world. I just opened a notebook with this kernel, it's a separate kernel.
+
+[ChrisShuler] 11:11:12
+If I go like this… And it works, then I am in the Esri environment.
+
+[ChrisShuler] 11:11:18
+Otherwise, if it doesn't work, then I'm probably in my other environment or some other environment kind of thing, or you're not signed into the portal.
+
+[ChrisShuler] 11:11:25
+You're not signing in, it'll say you're not signed in. I'm gonna close this down, because it's the… unnecessary.
+
+[ChrisShuler] 11:11:34
+I think this just opened up, so that's our other server.
+
+[ChrisShuler] 11:11:38
+But it's going for this long, so that means that it's working. It's just doing a bunch of… importing stuff.
+
+[ChrisShuler] 11:11:43
+So along with that, I'm going to also import these. So this means that we overwrite stuff.
+
+[ChrisShuler] 11:11:50
+Which is really useful. And then these are just some other kind of modules that we put in there.
+
+[ChrisShuler] 11:11:57
+Okay, so that worked. Go ahead and open those… Um, yeah, and then this is just, like, some of the basic stuff, right?
+
+[ChrisShuler] 11:12:15
+We just need to see more and take Matplot, right?
+
+[ChrisShuler] 11:12:22
+Okay, so that's how we're going to start off. Our… our scripts.
+
+[ChrisShuler] 11:12:27
+It's like, you're using a pie file. Which is… it's not wrong, by any means.
+
+[ChrisShuler] 11:12:34
+This is how most computer programmers do stuff. But it's not very good for communication, and it's not very good for troubleshooting, because you run the thing and you're like, I don't know what happened.
+
+[ChrisShuler] 11:12:44
+Michael threw an error, didn't throw an error, and I have no idea what's going on, right?
+
+[ChrisShuler] 11:12:47
+So, when you do stuff with a notebook. What you can do is you can get output.
+
+[ChrisShuler] 11:12:55
+Directly into the notebook, and that output can be really dynamic, so you can make plots, or you can… Um, you know, like, this is basically… I think right here, like… uh… it'll print this out, so this is what you might see in your terminal when you're running Python.
+
+[ChrisShuler] 11:13:14
+Which is, like, how are you running the script? Are you just running it in the terminal?
+
+[Autumn McCarter] 11:13:20
+No, I've been running it in a… in the script, and, like, how it has different… cells. I've been doing it that way. Is that how it… came out for you when I sent it over?
+
+[Autumn McCarter] 11:13:32
+It's just in the terminal?
+
+[ChrisShuler] 11:13:34
+So you sent a PI file. So a PI file is a text file.
+
+[Autumn McCarter] 11:13:39
+Okay. I tried to save it as an executable script. But it must have saved… Oh, okay, so how should I save it?
+
+[ChrisShuler] 11:13:44
+Yep, that's what I… that's what a pie file is, is an executable, so… So, like, this thing is a PI file, so it's basically just a text file.
+
+[Autumn McCarter] 11:13:54
+Okay.
+
+[ChrisShuler] 11:13:55
+And that's a script, right? So your terminal. Basically takes that script, and it… execute all the lines in the script. But you don't want to execute a script.
+
+[ChrisShuler] 11:14:03
+You want to interact with your data. In a interactive development environment, an IDE.
+
+[ChrisShuler] 11:14:11
+And Jupyter Notebook is a great little IDE. So, are you looking at something that looks like this?
+
+[Autumn McCarter] 11:14:17
+Yeah, I am.
+
+[ChrisShuler] 11:14:19
+Go to File. And then go to… download… Yeah, I think if you just do download, then it saves it as an IPYNB.
+
+[Autumn McCarter] 11:14:34
+Oh, okay. That makes sense. Yeah, I think in my Python class, they had us save it.
+
+[Autumn McCarter] 11:14:40
+As an executable script when we turned it in, so I just assumed that that was how… You've shared it with people, but okay.
+
+[ChrisShuler] 11:14:47
+Yep, and again, it's not wrong, like, like, it's… probably more… computer science-y people would say it's more right, but um… for this project, and for what we're doing right now.
+
+[Autumn McCarter] 11:14:49
+Okay.
+
+[ChrisShuler] 11:14:59
+A notebook is good. Okay, so this is your script. So basically, yeah, so these are your cells. So this is your first cell, you're right, so you get this.
+
+[ChrisShuler] 11:15:07
+So you're installing… you're trying to use GeoPandas. You can't use GeoPandas in ArcPy at the same time.
+
+[ChrisShuler] 11:15:14
+Two pandas is basically the free one, ArkPies the one you pay for. We use the one we pay for.
+
+[ChrisShuler] 11:15:17
+Um, they don't play well together. And they'll, like, they'll mess each other up, too.
+
+[ChrisShuler] 11:15:22
+So, don't want to… you don't want to use GeoPandas. I don't think you're actually even using it either.
+
+[ChrisShuler] 11:15:30
+Are you? Oh, yeah, you're reading… Ooh. I wonder if that's a problem, too, is you're trying to use GeoPandas in an ArcPy environment.
+
+[ChrisShuler] 11:15:42
+They really don't play very well together, so… Okay, so anyway, so… You are taking… okay, so this… is this a shapefile here?
+
+[Autumn McCarter] 11:15:55
+Uh, I'm not sure. Yeah, um, so that, when you run the script down below, yeah, it should be the OSCS path.
+
+[ChrisShuler] 11:15:57
+So, OSDS Path?
+
+[Autumn McCarter] 11:16:06
+Yeah, that's the shapefile.
+
+[ChrisShuler] 11:16:07
+Okay, perfect. So… Yeah, and you know, I'm gonna do… So there's a lot of this stuff up here. I'm gonna… when I'm exploring.
+
+[ChrisShuler] 11:16:19
+And actually, for what we're doing, we… We don't need this to be in a function.
+
+[ChrisShuler] 11:16:25
+And it'll actually make it way more complicated if it's in a function, because then when you run it, you have to change function, then you have to reload a function, and you have to run a function.
+
+[ChrisShuler] 11:16:32
+I suppose it's just, like, running the thing. So my scripts, the way that I usually do it, like, is I'll just go through and, like.
+
+[ChrisShuler] 11:16:40
+I just run it from the beginning. And, like, run each cell. And so if you want to do it again, you just change something in the beginning, and then ready, so again.
+
+[ChrisShuler] 11:16:48
+So you don't… you don't need it to be a function by any means.
+
+[Autumn McCarter] 11:16:51
+Okay.
+
+[ChrisShuler] 11:16:52
+So let's pull this out. And… Yeah, so there'll be some… let's see, there'll be some stuff.
+
+[ChrisShuler] 11:17:03
+Okay, so what you're doing to sewer data frame… Okay, so it's either in CSV or it's in cells. So the easiest thing to do here, actually, I think, is to just convert it to a CSV.
+
+[ChrisShuler] 11:17:17
+So you want to do some initial cleaning, right? So instead of being like, it could be Excel, it could be CSV, like, we're gonna get four of these things.
+
+[ChrisShuler] 11:17:23
+So, let's just make sure that it's a CSV. Um… And… let's see, we're gonna start off here. What I typically like to do…
+
+[ChrisShuler] 11:17:44
+It's kind of, um… you know, make cells that tell you what's going on here.
+
+[ChrisShuler] 11:17:50
+So we're gonna read in our input datasets.
+
+[ChrisShuler] 11:17:55
+And… oops.
+
+[ChrisShuler] 11:18:01
+And then, what are we doing here? So, first off, we should define what our path is, right? We kind of did that.
+
+[ChrisShuler] 11:18:09
+Ready. Just put this to the side here. So you did that, but down here, right? So, OSCS…
+
+[ChrisShuler] 11:18:22
+Um, usually what I'll do, and are you doing it here? Yeah, you're using a path join.
+
+[ChrisShuler] 11:18:30
+So… for this directory structure, what we're gonna do is this is going to be in our wastewater overlay GitHub repo.
+
+[ChrisShuler] 11:18:39
+Um, so you can actually see it. Right here. So this is… GitHub repo, let me see, I need to pull the origin first.
+
+[ChrisShuler] 11:18:50
+Are you… are you using GitHub? We kind of went over this, didn't we?
+
+[ChrisShuler] 11:18:55
+A while ago. Were you in that? Okay.
+
+[Autumn McCarter] 11:19:00
+Yeah, um… Yeah, that's how I got the files. I didn't know how to… I just downloaded… It has some problem getting it.
+
+[ChrisShuler] 11:19:14
+Are you a collaborator on this? Um, repository, Autumn?
+
+[Autumn McCarter] 11:19:21
+I have no idea.
+
+[ChrisShuler] 11:19:23
+If not, let's make you one. Yes.
+
+[ChrisShuler] 11:19:33
+Nope, just Amy is. Okay, so we're gonna invite you… Find the collaborator. So what is your GitHub?
+
+[ChrisShuler] 11:19:39
+You know, this is Amy's little GitHub name, let's do GitHub username. Can you paste it in the chat?
+
+[Autumn McCarter] 11:19:46
+Yeah, let me describe it.
+
+[ChrisShuler] 11:19:59
+So now, this is GitHub Desktop, by the way. I'm gonna just…
+
+[ChrisShuler] 11:20:07
+Push my changes. To this repository here.
+
+[ChrisShuler] 11:20:14
+And so in our wastewater overlay, it didn't exist before. But now we have our mini-projects.
+
+[ChrisShuler] 11:20:21
+And we have untitled… PyPython notebook.
+
+[ChrisShuler] 11:20:26
+Which… as the stuff that I put in there.
+
+[ChrisShuler] 11:20:33
+As it changes, as we do different things to it, then it will… thing that'll change, and then GitHub Desktop will recognize that change, see, okay, so it already changed something.
+
+[ChrisShuler] 11:20:45
+And then, uh, yeah, because that wasn't saved, and then it just auto-saved, and now something has changed.
+
+[ChrisShuler] 11:20:50
+And then I can recommit that. I can commit it again and push it up here, but as you see, it's not changed here yet.
+
+[ChrisShuler] 11:20:59
+Okay, did you find your username? Still working.
+
+[Autumn McCarter] 11:21:07
+I think I've just been using, or going to GitHub as a guest, like, I haven't been signing in.
+
+[ChrisShuler] 11:21:13
+Okay.
+
+[Autumn McCarter] 11:21:15
+Well, I can make one right now.
+
+[ChrisShuler] 11:21:18
+Yeah, you can do that later. So yeah, maybe just put on a list to do that later, because I'm going to be going kind of fast here.
+
+[Autumn McCarter] 11:21:22
+Okay. Got it. Yeah.
+
+[ChrisShuler] 11:21:25
+So, don't… don't multitask if, uh… If you want to keep up here. Okay, so… That's just where this thing will live.
+
+[Autumn McCarter] 11:21:28
+Okay.
+
+[ChrisShuler] 11:21:33
+And we'll keep it in this repository so that you've got it. So let's keep working on this.
+
+[ChrisShuler] 11:21:38
+Um, the real thing that I wanted to share was. This is a directory, and this directory of the GitHub.
+
+[ChrisShuler] 11:21:44
+Repo. Is reflected.
+
+[ChrisShuler] 11:21:48
+On my… I know this is kind of hard to see, but on my… you see my little explorer window?
+
+[ChrisShuler] 11:21:55
+So this is the directory, right? So this is our wastewater overlay.
+
+[ChrisShuler] 11:21:58
+These are the things that are in there. This is a hidden file that.
+
+[ChrisShuler] 11:22:01
+That has the things that make it a GitHub repo, that's why it's a GitHub repo instead of just a folder.
+
+[ChrisShuler] 11:22:08
+Um, so in here, our stuff lives in mini-projects, so we're gonna keep it in mini-projects.
+
+[ChrisShuler] 11:22:13
+And this mini-project is focused on the OSDS inventory. And so what we're going to do is keep any of the data that we're using for this.
+
+[ChrisShuler] 11:22:24
+In this kind of folder. So, where's the data?
+
+[ChrisShuler] 11:22:31
+Can you share the data with me so that I can get it onto here? You can either email it to me.
+
+[ChrisShuler] 11:22:36
+Or if it's on our, um… If it's on our, uh, our thing, what is this called? Google Drive?
+
+[ChrisShuler] 11:22:44
+Then I can get to it from there. Or, Amy, if you wanna… send it over.
+
+[ChrisShuler] 11:22:50
+We could do that, too. What's the… what's the best way to get that? Oh, no.
+
+[Aimee Schriber] 11:22:51
+Sure.
+
+[ChrisShuler] 11:22:56
+How can I move mine? Why is this stuff on moving?
+
+[ChrisShuler] 11:23:00
+Okay. Um…
+
+[Aimee Schriber] 11:23:01
+Um, let's see… the sewer billing data is in our shared wastewater overlay drive.
+
+[ChrisShuler] 11:23:07
+Okay, I'm going there now… I have too many shared drives. And then these Mesonet people keep, like, creating more shared drives.
+
+[ChrisShuler] 11:23:18
+Like, it's the only project that they have, like, look at this, this is Han. She made 5 shared drives.
+
+[ChrisShuler] 11:23:23
+To, like, store stuff. Anyway, um… Okay, where am I going?
+
+[ChrisShuler] 11:23:32
+Sorry. This is a super annoying thing about Google Drive, too. It's like, you click on something, and then it changes the order slightly.
+
+[ChrisShuler] 11:23:39
+And then you double-click on it, and then it… Okay.
+
+[ChrisShuler] 11:23:47
+Where do we go?
+
+[Aimee Schriber] 11:23:49
+Um, let's see, data… And then sewer billing data.
+
+[ChrisShuler] 11:23:59
+Here we go, perfect. Okay, so we've got sewer billing data, what is all this stuff?
+
+[ChrisShuler] 11:24:07
+Which one do I want? Let's just do quick.
+
+[Aimee Schriber] 11:24:09
+Um. The… the one you're hovering over is Honolulu's, and then… Why is this right above?
+
+[ChrisShuler] 11:24:18
+Are these the same team? Okay, so I'm gonna download one of these…
+
+[Aimee Schriber] 11:24:20
+They should be.
+
+[ChrisShuler] 11:24:32
+Left the window here…
+
+[ChrisShuler] 11:24:51
+Okay.
+
+[ChrisShuler] 11:24:56
+So… Is this what we need?
+
+[Aimee Schriber] 11:25:04
+Yep.
+
+[ChrisShuler] 11:25:06
+Okay, so what… what is this data? What does it tell us?
+
+[Aimee Schriber] 11:25:11
+It tells us which TMK. Uh, receive a sewer bill, or which addresses.
+
+[Aimee Schriber] 11:25:18
+Along with TMK's.
+
+[ChrisShuler] 11:25:19
+Okay. Well… So, like, these ones do not… have service?
+
+[Aimee Schriber] 11:25:31
+Yeah.
+
+[ChrisShuler] 11:25:34
+Okay, so you have to clean it out of this kind of messy column here?
+
+[Aimee Schriber] 11:25:40
+Um, I think so, and I can't remember, but it… there wasn't too many that… didn't receive service, but there are.
+
+[Aimee Schriber] 11:25:49
+Several. And then, same with Honolulu's, there's… Uh, because we received, like, the water… Use Stata, uh, I also had to clean it. That column just has, like, a yes or no.
+
+[Aimee Schriber] 11:26:03
+Uh, if they receive a sewer
+
+[ChrisShuler] 11:26:05
+Okay. So this is column B, right? Service area. Is this the… this is the only way.
+
+[ChrisShuler] 11:26:12
+To do this, what's the usage type? Oh, commercialization.
+
+[ChrisShuler] 11:26:19
+Residential. Yeah, so the only way to understand if they do or don't have service is this service area, right?
+
+[ChrisShuler] 11:26:28
+And is this… do you think… so this is a step that we're taking.
+
+[ChrisShuler] 11:26:32
+Who are making this assumption. Did Carrot specifically say, the ones that say no service?
+
+[ChrisShuler] 11:26:40
+Did he say that they are? Um… don't receive a sewer bill?
+
+[Aimee Schriber] 11:26:49
+Um, I don't… think he said anything in his email.
+
+[Aimee Schriber] 11:26:54
+To us. Okay.
+
+[ChrisShuler] 11:26:55
+Okay, let's follow up on that. Yeah, I mean, things like that, can you put it on your list, Amy?
+
+[ChrisShuler] 11:27:00
+Follow up, Garrett, and say. We cleaned this.
+
+[Aimee Schriber] 11:27:00
+Sure.
+
+[ChrisShuler] 11:27:04
+Because there's all these ones that say, no wastewater treatment plant service.
+
+[ChrisShuler] 11:27:09
+But worse? Do they not get a sewer bill? That would be the best way to do that.
+
+[ChrisShuler] 11:27:14
+For now, probably the easiest way to clean it. You could do it in Python.
+
+[ChrisShuler] 11:27:19
+You know, you could just say anything with this string in it.
+
+[ChrisShuler] 11:27:22
+Delete that row. Sometimes it's just easier, like, when you're just figuring all this stuff out in Excel, and just be like, alright, I'm just gonna do it.
+
+[ChrisShuler] 11:27:30
+Right here, you know? Um… I'm just gonna delete these rows.
+
+[ChrisShuler] 11:27:40
+Because that was super easy, and I didn't have to figure out how to script it.
+
+[ChrisShuler] 11:27:45
+So you basically have… a couple of different treatment plants.
+
+[ChrisShuler] 11:27:49
+Good. Okay, so we basically cleaned that. This is a lot of data in here, we don't need that. So I'm just gonna delete that right now.
+
+[ChrisShuler] 11:28:00
+But I'm gonna save this as a draft. Because, um.
+
+[ChrisShuler] 11:28:07
+We should get that information from Garrett first. But so now what I'm going to do is I'm gonna take this.
+
+[ChrisShuler] 11:28:15
+And actually, there's one little tricky thing, too, with Excel. Sometimes when you delete rows.
+
+[ChrisShuler] 11:28:20
+It'll, like, keep the rows at the bottom, and actually, let's see if it does it.
+
+[ChrisShuler] 11:28:25
+So we're gonna save this…
+
+[ChrisShuler] 11:28:44
+Just gonna save it as that. And then, if we look for that… So here's Excel… oops.
+
+[ChrisShuler] 11:28:56
+I want to save that as… Check as a CSV… So you always have to do stuff twice.
+
+[ChrisShuler] 11:29:05
+Or I always have to do stuff twice. Okay, so now we got our… CSV here. If we open it up in Notepad.
+
+[ChrisShuler] 11:29:18
+Okay, so it didn't do it, but sometimes you'll see, like, a bunch of rows of commas, and that's just, like, you have to delete some cells out of it.
+
+[ChrisShuler] 11:29:25
+But otherwise, this looks good. Okay. So now we have the CSV, so I'm going to take this.
+
+[ChrisShuler] 11:29:34
+And I'm gonna drop in my… Cat a folder. We can organize this better, if you want, with other little mini folders.
+
+[ChrisShuler] 11:29:41
+But basically, this is our… our sewer data file, right?
+
+[ChrisShuler] 11:29:47
+So let's go back to our script. Okay, so the path is, um… this is our sewer data file, yeah?
+
+[ChrisShuler] 11:29:57
+Okay, so let me just put this down for a second.
+
+[ChrisShuler] 11:30:00
+So, sewer path… So this is, let's see, and then let's make this a little bit more clear, just to our…
+
+[ChrisShuler] 11:30:13
+So, sometimes it's nice to pick things super-duper quicker. And… We do need to use…
+
+[ChrisShuler] 11:30:24
+We want to use a relative path, so this is how you use a relative path.
+
+[ChrisShuler] 11:30:27
+So basically, like… where my script is sitting.
+
+[ChrisShuler] 11:30:35
+Is where you basically start from, so… I'm starting from the scripts folder. In this folder, inside this folder, inside this folder.
+
+[ChrisShuler] 11:30:45
+When I do these… this OSDS. Join thing. If I put a dot.
+
+[ChrisShuler] 11:30:50
+That means, in this folder. If I put two dots, that means go one folder back.
+
+[ChrisShuler] 11:30:58
+So I'm gonna do two dots. Meaning, go one folder back.
+
+[ChrisShuler] 11:31:03
+And then that is in the OS. So now, I told it to go.
+
+[ChrisShuler] 11:31:08
+One folder back to OSJS inventory. Now it's in this folder. Now I want it to go to Data.
+
+[ChrisShuler] 11:31:14
+So I'm just going to copy that, and I'm going to just put in here.
+
+[ChrisShuler] 11:31:19
+Data with quotation marks. You can actually, like, fully build this path with.
+
+[ChrisShuler] 11:31:23
+Flashes, if you want, where you can just, like. Put them in there with commas, and it'll join them together. That's what OSDS Pass Join does, is it makes your path fall.
+
+[ChrisShuler] 11:31:32
+From a junk show into a… the machinery to go path. Okay, so it's in data.
+
+[ChrisShuler] 11:31:38
+And since there's no other paths to add, we're just gonna say, here's our… Oh, I put it in Rockies. Here is our data.
+
+[ChrisShuler] 11:31:51
+Okay, great, so I've got… Oh, shoot, I did that in the wrong spot, which is… Not a big deal.
+
+[ChrisShuler] 11:32:00
+Because we can just do it. Okay, so does that make sense? So now, what we have here is we have… Sewer billing data path… Put that down. So then the sewer… DataFrame is… read this thing.
+
+[ChrisShuler] 11:32:24
+So it reads it, and then the nice thing that you can do… When you, uh, with your notebook.
+
+[ChrisShuler] 11:32:33
+Just, like, display it, so you can make sure that what you're looking at is what you're looking at.
+
+[ChrisShuler] 11:32:40
+Um… I don't always keep this in my script, but, like, if I'm writing this code, like, I'm… darn sure that I'm gonna do this, and make sure that.
+
+[ChrisShuler] 11:32:49
+You know, it goes all the way… the number of rows that I expect are in there.
+
+[ChrisShuler] 11:32:52
+And that everything looks good in there, right? And I've got my TFK and stuff.
+
+[ChrisShuler] 11:32:58
+Okay, so you basically do the same thing with your… OSTS.
+
+[ChrisShuler] 11:33:05
+Dataframe… Uh… and so these are paths.
+
+[ChrisShuler] 11:33:14
+So these are, you know, where you can change things up, but this is…
+
+[ChrisShuler] 11:33:22
+And then put in what you're doing, too, right? So this is… Define path to… input data.
+
+[ChrisShuler] 11:33:32
+In this case. Read, uh, data into…
+
+[ChrisShuler] 11:33:42
+Right? So you remove that data here. So, what is your script?
+
+[ChrisShuler] 11:33:49
+I think it turned your script off.
+
+[ChrisShuler] 11:33:56
+Okay, so with this, you have to do some cleaning. So what is Clean TMK?
+
+[ChrisShuler] 11:34:09
+So that…
+
+[Autumn McCarter] 11:34:10
+Um… That was to… because one file had TMK in, like, all lowercase, the other one had a.
+
+[Autumn McCarter] 11:34:18
+Capitals, and so I just, like. Gotta clean it there.
+
+[ChrisShuler] 11:34:24
+Okay, okay, so that's kind of like a little thing. So with that, with things that are that small.
+
+[Autumn McCarter] 11:34:27
+Yeah
+
+[ChrisShuler] 11:34:32
+Typically, I just do it here. Because you, like, wrote a whole function to be like… Actually, I want this lowercase. Just, like, change it here, and then save it.
+
+[Autumn McCarter] 11:34:41
+Yeah, I normally do that, too. I was just, like, in the mindset of, like, oh, I want it to be really easy to just, like, put in a file and have it.
+
+[Autumn McCarter] 11:34:50
+Do it like that, but…
+
+[ChrisShuler] 11:34:54
+Well, it depends on the files, right? So these sewer billing files, we're probably gonna get them once.
+
+[ChrisShuler] 11:35:00
+And the amount of cleaning is, like, it's small enough that it's fine to do that again.
+
+[ChrisShuler] 11:35:06
+The OSTS dots are gonna… We know they're gonna change, so we do want to be.
+
+[ChrisShuler] 11:35:13
+Extensible about that. Okay, so… Um… From there… Where's… so where's the… the rest of this data? I guess we need the OSDS data.
+
+[Aimee Schriber] 11:35:35
+I just dropped the zip files. Uh, in our Google Drive.
+
+[ChrisShuler] 11:35:43
+Okay.
+
+[ChrisShuler] 11:35:49
+Too many windows.
+
+[ChrisShuler] 11:35:57
+Or Google Drive. Okay, here we go.
+
+[Aimee Schriber] 11:35:58
+Yep, I should drive, yep, and then it should be back in the data, and then the new OSDS inventory.
+
+[ChrisShuler] 11:36:05
+Okay.
+
+[ChrisShuler] 11:36:11
+And it's this. Are these right here. Okay.
+
+[Aimee Schriber] 11:36:13
+Mm-hmm.
+
+[ChrisShuler] 11:36:16
+Ooh, yeah, so we'll definitely need some… Yeah, this is super-duper influx, right?
+
+[ChrisShuler] 11:36:24
+And how consistent are these? Are these zip files right here.
+
+[ChrisShuler] 11:36:29
+Like, do they have the exact same columns and stuff, or…?
+
+[Aimee Schriber] 11:36:32
+Um. The columns might be the same, but not all of the columns are filled out for… every county, it looks like. Like, I noticed a lot of null values.
+
+[ChrisShuler] 11:36:48
+Okay, that'll be… yeah, we definitely need to clean all that stuff up. I mean… Yeah, we can… we'll talk about that later, I think.
+
+[ChrisShuler] 11:36:59
+What's going on here?
+
+[ChrisShuler] 11:37:06
+Why isn't it? Show me where it is.
+
+[ChrisShuler] 11:37:17
+Okay, so this is the Kawhi… STS.
+
+[ChrisShuler] 11:37:31
+I'm just gonna drop this in here…
+
+[ChrisShuler] 11:37:40
+I'm putting draft on all these things, because…
+
+[ChrisShuler] 11:37:45
+You know, we do want to kind of make this a little more consistent when we actually do it.
+
+[ChrisShuler] 11:37:52
+Okay, so… this is here…
+
+[ChrisShuler] 11:38:07
+Yeah, folder…
+
+[ChrisShuler] 11:38:12
+And the thing we're looking for is called…
+
+[ChrisShuler] 11:38:29
+Okay, so… You got a couple… now you've basically got a… you've got a shapefile, and you've got a… Panda's data frame.
+
+[ChrisShuler] 11:38:39
+So you sort of have some choices to make. What I typically like to do is take everything into Pandas.
+
+[ChrisShuler] 11:38:46
+And have it, like, all kind of keyed out correctly, so that I can send it back to a shapefile.
+
+[ChrisShuler] 11:38:53
+Um, so did… is that what you did? Did you read it into a…
+
+[ChrisShuler] 11:39:04
+Yeah, so you use GeoPandas to read it into… A panda's data frame.
+
+[ChrisShuler] 11:39:12
+Um.
+
+[ChrisShuler] 11:39:17
+Let's see, oh, and I'll do this in a little bit.
+
+[ChrisShuler] 11:39:22
+I forget. I have… I kind of have a cheat sheet floating around on how to…
+
+[ChrisShuler] 11:39:31
+Do things in the way that I like to do things. There's lots of ways to do stuff.
+
+[ChrisShuler] 11:39:35
+I try to keep things as consistent as possible.
+
+[ChrisShuler] 11:39:43
+Okay, I want a shapefile attribute table to pandas that frame. Okay, so this is how… This is how I've done it in the past, so I'm just going to copy and paste this in.
+
+[ChrisShuler] 11:39:53
+How did I do that? This is, uh… I list fields… kind of the stupid shape column… I saved it to an array, and then I turned it into a pandas data frame.
+
+[ChrisShuler] 11:40:08
+That's pretty straightforward.
+
+[ChrisShuler] 11:40:14
+And so this is actually a function.
+
+[ChrisShuler] 11:40:24
+I'm just gonna put it in here.
+
+[ChrisShuler] 11:40:31
+So you can do things a couple ways. You can turn them into functions, or you can…
+
+[ChrisShuler] 11:40:39
+Yeah, earth, yes, with great, what do I want to call this?
+
+[ChrisShuler] 11:40:44
+What did you call it? You called it OSDS. Do you have anything?
+
+[ChrisShuler] 11:41:00
+Okay, so Reddit, here's our OSTS geo data frame. And then you've got a data frame from.
+
+[ChrisShuler] 11:41:09
+Okay, so now…
+
+[ChrisShuler] 11:41:17
+Your OSDS data frame. Looks like we can already see an issue here.
+
+[ChrisShuler] 11:41:23
+Why do some of them not have TMKs? Was that one of the problems, Autumn?
+
+[Autumn McCarter] 11:41:29
+Yeah, I noticed that a lot at the bottom are TMK is just listed as zero.
+
+[Autumn McCarter] 11:41:33
+I wasn't sure what that meant.
+
+[ChrisShuler] 11:41:37
+So what's going on there, Amy?
+
+[Aimee Schriber] 11:41:43
+Um…
+
+[Aimee Schriber] 11:41:49
+I don't know. I don't see any… blank 10Ks at the bottom on the… CSV itself, um… Let's see, I vaguely… remember… the last, like, 50 rows or so when I imported the table into ArcGIS Pro, like, it added an extra 50 rows that were blank or something.
+
+[Aimee Schriber] 11:42:16
+Um. And I think I just delete… deleted those, and I verified that they weren't anywhere on the… the actual CSV that we were sent.
+
+[ChrisShuler] 11:42:29
+Interesting. Okay. Um.
+
+[ChrisShuler] 11:42:35
+Did I steal it away? Yeah. Well, let's look at it in art growth. So then this is the other thing you do, then you're like, okay.
+
+[ChrisShuler] 11:42:44
+There's some weird inconsistency. I gotta go figure it out. So let's open it up, and let's zoom to the layer. Okay, so we've got some points… Got the attribute table action here.
+
+[ChrisShuler] 11:43:02
+Okay, 17K is here…
+
+[ChrisShuler] 11:43:09
+Yeah, and this is, you know, obviously, I'm gonna look through every single one, so let's sort it.
+
+[ChrisShuler] 11:43:20
+Okay, let's what it… Ascending. Okay, so there's some points to zeros.
+
+[ChrisShuler] 11:43:26
+Why do they have zeros? Where are they? What's going on here?
+
+[ChrisShuler] 11:43:31
+And there's… not that many, there's plenty of them, 21.
+
+[ChrisShuler] 11:43:38
+Okay, so where are these things? And why do they have zeros?
+
+[ChrisShuler] 11:43:44
+So they're weird ones, it looks like. Right? Like, this is the airport.
+
+[ChrisShuler] 11:43:49
+This is a shopping center.
+
+[ChrisShuler] 11:43:56
+This is… something that's got a lot of solar panels.
+
+[ChrisShuler] 11:44:05
+And it'd be a townhouse?
+
+[ChrisShuler] 11:44:12
+Yeah, so the… I mean, the official thing to do… would be to add the TMK, you know?
+
+[ChrisShuler] 11:44:22
+Like, you've got a parcel there. There's 20 of them.
+
+[ChrisShuler] 11:44:27
+They're in the inventory. We know we want to clean them out, but we don't want to clean them out just by deleting them right now.
+
+[ChrisShuler] 11:44:32
+Because they're on there. And where did… where is this from? Is this Julia and Jameson's inventory?
+
+[ChrisShuler] 11:44:41
+Those guys are not ready to publish anything. Your stuff is such a junk show.
+
+[Aimee Schriber] 11:44:41
+Yes.
+
+[ChrisShuler] 11:44:47
+Seriously, guys? Like, what are you doing?
+
+[Autumn McCarter] 11:44:49
+Do you think it'd be… it's because they're… injection wells? Like… Because all of those affirmative, so it's just an injection.
+
+[ChrisShuler] 11:44:59
+Oh. Look at that! Sharpshoot, Autumn.
+
+[ChrisShuler] 11:45:05
+Yeah. They're all injection wells. And we're not dealing with injection mouse.
+
+[ChrisShuler] 11:45:11
+Right? So, you are totally… you are totally right. I didn't even notice that.
+
+[ChrisShuler] 11:45:19
+You know, that's the process, right? You just gotta, like, use your brain and think about stuff. Clearly, your brain's working better than mine.
+
+[ChrisShuler] 11:45:28
+So… here's an interesting thing. They have this OSDS quantity on there.
+
+[ChrisShuler] 11:45:34
+But the type are all 0. So they have… I mean, I guess it's an on-site disposal system.
+
+[ChrisShuler] 11:45:44
+It's an injection well. It's not the kind that we care about.
+
+[ChrisShuler] 11:45:48
+Um. And so the question being.
+
+[ChrisShuler] 11:45:55
+And is this the one that we visited? Sorry. I am digressing, but is it… Maybe not. Remember when we visited that one, Amy, in Kauai? It was, like, summer.
+
+[Aimee Schriber] 11:46:06
+The… Yeah, it's near the airport.
+
+[ChrisShuler] 11:46:12
+Um. So now we have your choice to make, right? We can say… Do we care about injection wells, or do we just let them go at this stage?
+
+[ChrisShuler] 11:46:20
+And what you want to do before you, like, do that, you want to really think and say, is it… This is gonna bite me in the butt later. I'm gonna have to, like, go back and redo all this stuff.
+
+[ChrisShuler] 11:46:31
+Um.
+
+[ChrisShuler] 11:46:38
+I cannot think of a reason that we want injection wells to be in here. They're, like, totally different kind of thing.
+
+[ChrisShuler] 11:46:45
+Right? Yeah, so let's get rid of them.
+
+[ChrisShuler] 11:46:52
+We can do it in a couple different ways. Um, you can do it in the script.
+
+[ChrisShuler] 11:47:00
+Which sort of has… This is what you did. That's what you basically did, right? You cleaned out anything that had zero for a TMK?
+
+[Aimee Schriber] 11:47:12
+No, I was actually getting mixed up. I thought… we were talking about the sewer billing data at first, and how there were zeros. I didn't realize there were.
+
+[Aimee Schriber] 11:47:21
+Zeros in this OSDS.
+
+[ChrisShuler] 11:47:24
+Oh. There's zeros in the TMK thing, too, huh?
+
+[Aimee Schriber] 11:47:29
+Um, just that weird thing where it added, like, 50 rows, but I got rid of those.
+
+[Aimee Schriber] 11:47:33
+Um, but I… so I haven't done anything for this OSDS.
+
+[Aimee Schriber] 11:47:37
+File.
+
+[ChrisShuler] 11:47:38
+Okay, so Amy, can you make… start making some notes? So this is… this is going to fall into, like, another category. We're not gonna deal with this in your script, Autumn.
+
+[ChrisShuler] 11:47:49
+Because this is, like, fuckery that we gotta deal with when we download the data, basically. So we have to take the data.
+
+[ChrisShuler] 11:47:56
+And clean the ridiculousness of the data up. We're not going to script that ridiculousness of the cleaning, because the data is always changing.
+
+[ChrisShuler] 11:48:03
+So we want to basically say our input data starts where we want it, where it's, like, relatively clean.
+
+[ChrisShuler] 11:48:09
+Where we have to really start systematically. Changing things. This is not a systematic change. This is like, ah, there's, like, something random in here.
+
+[ChrisShuler] 11:48:18
+I just need to delete this. And so we're literally gonna, like.
+
+[ChrisShuler] 11:48:22
+Delete these rows. So that's what… that's what I want to do here, is I'm just gonna delete them. But, Amy, if you can make a note that, like.
+
+[ChrisShuler] 11:48:30
+And so this is one thing, too, Amy. When you go through this stuff, like, you gotta check it for… you know, weird stuff like this.
+
+[ChrisShuler] 11:48:38
+And then we have to start massaging it into a better.
+
+[ChrisShuler] 11:48:42
+A better format, so… Anyway, okay, so… I didn't actually delete it on the correct data layer there.
+
+[ChrisShuler] 11:48:56
+Um, because this is not the correct data layer, this is… The one that is in my Downloads folder.
+
+[ChrisShuler] 11:49:03
+I'm scared my guest. That doesn't matter. Okay, let me put the one that's for my downloads folder.
+
+[ChrisShuler] 11:49:11
+Or that is not from the downloads, that is from my… GitHub folder, get repos… Place overlay.
+
+[ChrisShuler] 11:49:20
+That, uh, you know, number one. Scripts. Nope, not at all.
+
+[ChrisShuler] 11:49:25
+We're in many projects right now with CS inventory…
+
+[ChrisShuler] 11:49:31
+Dada. Corner-shaped drag… this one. So this is our Quiet Data.
+
+[ChrisShuler] 11:49:37
+1, 2, 3… I'm just gonna do that same thing, right?
+
+[ChrisShuler] 11:49:42
+Find the TMKs that are zero. Come on, delete it. I just don't want them in there.
+
+[ChrisShuler] 11:49:52
+The objection was.
+
+[ChrisShuler] 11:49:59
+And I'm gonna save my edits.
+
+[ChrisShuler] 11:50:05
+And that should mean that those are all gone.
+
+[ChrisShuler] 11:50:13
+Can they effectively do that? Why are they still showing up?
+
+[ChrisShuler] 11:50:22
+Manny, am I doing this wrong? I said, you delete something in ArcGIS.
+
+[Aimee Schriber] 11:50:26
+Um, yeah, I just hit delete.
+
+[ChrisShuler] 11:50:32
+Oh, maybe I need to hit this instead.
+
+[ChrisShuler] 11:50:40
+Did I just delete something I didn't want to delete? Because it doesn't matter.
+
+[ChrisShuler] 11:50:44
+We're just doing this as an example.
+
+[ChrisShuler] 11:50:53
+Yeah, I think I right-deleted.
+
+[Aimee Schriber] 11:50:53
+It looks like they're still there.
+
+[ChrisShuler] 11:51:00
+Okay, yeah, you gotta hit delete that, and then save. Okay.
+
+[ChrisShuler] 11:51:04
+Okay, so I deleted them in ArcPro, I saved the data.
+
+[ChrisShuler] 11:51:09
+So Python is referencing that data. So, if we just run the thing again…
+
+[ChrisShuler] 11:51:19
+They're gone.
+
+[ChrisShuler] 11:51:28
+And we've got 144.95. It's always good to double-check numbers when… 14, yeah, $14.95. Okay.
+
+[ChrisShuler] 11:51:36
+So we effectively deleted them, so those are gone. All right, so… finish that little random issue. So, but we also had this one, right?
+
+[ChrisShuler] 11:51:50
+So, um…
+
+[ChrisShuler] 11:52:00
+Oh, it looks like there's no zeros in here.
+
+[ChrisShuler] 11:52:14
+You see that? So I asked, what's the minimum value for TMK?
+
+[ChrisShuler] 11:52:17
+Didn't you say there were zeros, Amy?
+
+[Aimee Schriber] 11:52:21
+Um, only… when… I don't know if there was… there were just, like, a bunch of empty rows or something.
+
+[Aimee Schriber] 11:52:28
+When I imported it into ARC Pro. But not on the CSV themselves.
+
+[Aimee Schriber] 11:52:39
+When I did some sort of join at, like, the last 50 rows were null or something, because there was…
+
+[ChrisShuler] 11:52:46
+Mm-hmm. Okay, so how do we… Uh, sometimes… sometimes, yeah, I'll work stuff out now.
+
+[ChrisShuler] 11:52:54
+So…
+
+[ChrisShuler] 11:53:07
+I know of one comment.
+
+[ChrisShuler] 11:53:14
+Oh, I just have to push any.
+
+[ChrisShuler] 11:53:20
+Okay. Okay, so there are no null values in the column.
+
+[ChrisShuler] 11:53:27
+According to that. So, these are all things that you want to know.
+
+[Aimee Schriber] 11:53:28
+Whether that's overactive. Thank you for my time.
+
+[ChrisShuler] 11:53:35
+These are all things that you want to… like, do double checks on, right?
+
+[ChrisShuler] 11:53:39
+So as you're going through this. Like, you know, kind of do what you're doing, but, like, just, you know, sort of… think about what's going on, like, is there anything that could mess me up? Because what I'm going to do now.
+
+[ChrisShuler] 11:53:49
+I'm gonna relate the TMK columns, right? And so, are the TMK columns… have a similar format. That's another question to ask, too, right?
+
+[Aimee Schriber] 11:53:58
+Down and sisters, right? Okay, perfect.
+
+[ChrisShuler] 11:54:03
+So here's the TMK, they both start with 4s. Yeah, they seem like they're pretty similar format, right?
+
+[ChrisShuler] 11:54:11
+Okay, so…
+
+[ChrisShuler] 11:54:18
+Okay, so what's next? We've got these… has data frames.
+
+[Aimee Schriber] 11:54:19
+Oh, that's sad, let's sad. Yeah, but also very things, but I don't.
+
+[Aimee Schriber] 11:54:26
+Yeah. Definitely.
+
+[ChrisShuler] 11:54:26
+So we've got this one, and we've got this one. What do we do with them?
+
+[ChrisShuler] 11:54:34
+What's the next step?
+
+[Aimee Schriber] 11:54:38
+I don't think my, uh, logs have been really involved since… So, I have to fly back to my area.
+
+[ChrisShuler] 11:54:47
+Do we… Do we need to change the team? Do we need to change the names?
+
+[Aimee Schriber] 11:54:48
+Okay, okay, do you have any other differently? Um, and then right after that.
+
+[Autumn McCarter] 11:54:57
+Um, I think when I was doing it. For the Kauai ones, the OSDS was in, like, lowercase, but in the sewer billing.
+
+[Aimee Schriber] 11:54:59
+I'm quoting in Missouri.
+
+[Autumn McCarter] 11:55:07
+One of them was in Capital, and recall names.
+
+[ChrisShuler] 11:55:10
+Yeah, yeah, you're right there.
+
+[ChrisShuler] 11:55:19
+Okay, do we need to change them? I guess we do need to change them.
+
+[ChrisShuler] 11:55:24
+Do we need to change it?
+
+[Aimee Schriber] 11:55:26
+I know they also may be different data types, so for Honolulus, I think.
+
+[Aimee Schriber] 11:55:34
+Uh, I had to change it from, like, the TMK column was, like, a text.
+
+[Aimee Schriber] 11:55:38
+The sewer billing was a double. Um, but I think… These are a double and a long, so I don't know if those… work together, or if they need to be the exact same.
+
+[ChrisShuler] 11:55:39
+That's a… yeah, and that's… that's a good idea there, too, so… Okay, so now we're going to kind of start going into pseudocode, since we're running up against the hour here.
+
+[ChrisShuler] 11:56:02
+Um.
+
+[ChrisShuler] 11:56:06
+So now, they want to… standardize… So the TMK.
+
+[ChrisShuler] 11:56:16
+Column… format. Right? So the number format.
+
+[ChrisShuler] 11:56:28
+In column Name. So that's pretty simple. You can get that done.
+
+[ChrisShuler] 11:56:34
+And then here's your identify the overlaps, right? So you're using this… this function, where you're saying.
+
+[ChrisShuler] 11:56:42
+This is a set. And that's a set. So these are the overlapping ones. Okay.
+
+[ChrisShuler] 11:56:51
+And so these are the overlapping ones.
+
+[ChrisShuler] 11:56:57
+Okay, so this is HIND. So the overlapping ones are in this one.
+
+[ChrisShuler] 11:57:01
+It's kind of nice for this… this is, like, this is basically your main logic.
+
+[ChrisShuler] 11:57:05
+Great, Adam. So for your main logic, like, type out notes, right, where you're basically saying, like, what does this do?
+
+[ChrisShuler] 11:57:12
+Right, and I mean, you can even… You know what it does, but… I think you can even just blank.
+
+[Autumn McCarter] 11:57:16
+Yeah.
+
+[ChrisShuler] 11:57:20
+Do that, right? So, it does those things.
+
+[ChrisShuler] 11:57:30
+And it's also handy to do this so that you know what it's doing. You're like, oh, okay, so it's removing duplicates and blah blah blah.
+
+[ChrisShuler] 11:57:39
+Um… okay. And then if you're removing them… Here.
+
+[ChrisShuler] 11:57:49
+Yeah, and so I think what I would do here, uh… But, so we're basically just removing… We're removing those TMKs that fall within.
+
+[ChrisShuler] 11:58:00
+These workers that have a sewer bill, right? Yeah, so that's… that's pretty simple.
+
+[Autumn McCarter] 11:58:03
+Yeah.
+
+[ChrisShuler] 11:58:07
+And so…
+
+[ChrisShuler] 11:58:19
+You know, identify what your insects are about.
+
+[ChrisShuler] 11:58:24
+And then, Amy, have we… have we determined, are we removing the hosts or not?
+
+[Aimee Schriber] 11:58:33
+My… else, no.
+
+[Aimee Schriber] 11:58:36
+Exactly, yeah. I think… we might need to take a closer look.
+
+[Aimee Schriber] 11:58:44
+At some of them. Um… And then I guess the other piece that we're looking at are the laterals.
+
+[ChrisShuler] 11:58:51
+Yeah, so I think we just want to get our… right now, at least, we want to get ourselves to the point where we can look at it.
+
+[ChrisShuler] 11:58:59
+Um. But yeah, so I think that's pretty much… covers… what… uh, like, the format that we want this in, right? Because then what we can do… Because we can build on this, yeah.
+
+[ChrisShuler] 11:59:21
+So even before we do this, we kind of need to clean up.
+
+[Autumn McCarter] 11:59:22
+Okay. Just manually go in and…
+
+[ChrisShuler] 11:59:26
+The input data. So, Amy.
+
+[ChrisShuler] 11:59:32
+No, one second here, so… there's, like, we're doing this stuff.
+
+[ChrisShuler] 11:59:38
+But right now, you know, Amy, you basically, like, this is a mess.
+
+[ChrisShuler] 11:59:42
+Right? So, one, why are they separate islands?
+
+[Aimee Schriber] 11:59:50
+Um, that's how… That's how they provided them to us, yeah.
+
+[ChrisShuler] 11:59:50
+That, because that's how they provided them to us.
+
+[Aimee Schriber] 11:59:55
+I do have a merged one that I… merged at some point.
+
+[ChrisShuler] 11:59:58
+Okay, so let's just use the merged one. Right?
+
+[ChrisShuler] 12:00:03
+So let's use the merged one. And how did you merge it? Or an… oh, great, first things first.
+
+[ChrisShuler] 12:00:11
+You were saying they have… do they all have the same columns?
+
+[Aimee Schriber] 12:00:18
+Um. I have to double check, I… Think… They might be slightly different, or if they are the same, not… every… column is filled out for every island, like, I think, um, Oahu, they have a column that has, like.
+
+[ChrisShuler] 12:00:19
+What do they have different columns.
+
+[Aimee Schriber] 12:00:54
+The place name, but… The rest of the counties, as far as I remember, like, don't have that column filled out.
+
+[ChrisShuler] 12:00:56
+Sorry, you froze, I think…
+
+[ChrisShuler] 12:01:04
+Can you hear me? Okay, sorry, yeah, you froze, my internet is… It's burping. Um… Okay, so… You said they are the… the different islands from Jameson are.
+
+[Aimee Schriber] 12:01:06
+Um, yeah, I can hear you now.
+
+[ChrisShuler] 12:01:22
+They have some differences.
+
+[Aimee Schriber] 12:01:24
+Yeah. I think so. Um…
+
+[ChrisShuler] 12:01:33
+Okay, so we're gonna write some notes here, and this is basically, like.
+
+[Aimee Schriber] 12:01:34
+I will…
+
+[ChrisShuler] 12:01:39
+What we need to do first. Right, so one thing is we need to merge and standardize columns.
+
+[ChrisShuler] 12:01:45
+What else do we need to do? Or, actually, we need to standardize the columns. Yeah, merge… the four islands together.
+
+[ChrisShuler] 12:01:56
+Okay, we need to remove the injection wells, right? So let's do that separately.
+
+[Aimee Schriber] 12:02:03
+I know yesterday talking about your audience. Okay.
+
+[ChrisShuler] 12:02:06
+What else?
+
+[Autumn McCarter] 12:02:16
+Do we need to make sure that the… TMK columns are the same.
+
+[Autumn McCarter] 12:02:22
+Type, like, string, or… Double.
+
+[ChrisShuler] 12:02:26
+Not here. We'll do that down here. Yeah, this is all the stuff that Amy's gonna do to make our beautiful… I'm not gonna say worthy?
+
+[ChrisShuler] 12:02:36
+Are, uh… our input, our… are, uh, starting input dataset.
+
+[ChrisShuler] 12:02:47
+So this will be replaced.
+
+[ChrisShuler] 12:02:54
+I have a… it's not the… I don't want to call it the clean, but slightly cleaned up, right?
+
+[ChrisShuler] 12:03:00
+The starting OSDS file.
+
+[ChrisShuler] 12:03:16
+Yeah, so this will be the OSDS path. That's all… that's all the OSD is in the entire state, right?
+
+[ChrisShuler] 12:03:22
+You clean it up, Amy. Make that look better. So then, you've got a couple… So this is the Kauai sewer billing data path, right?
+
+[Aimee Schriber] 12:03:31
+Yeah.
+
+[ChrisShuler] 12:03:32
+And we want the scripts to work with both of them.
+
+[ChrisShuler] 12:03:37
+Um. Crnsa Kauai.
+
+[ChrisShuler] 12:03:42
+And then you also need… the Oahu one, right? Or… And are these going to require some separate cleaning?
+
+[ChrisShuler] 12:03:51
+Maybe yes, maybe no. I mean, I think the end of.
+
+[ChrisShuler] 12:03:56
+The end of this should probably be… Okay, so we're gonna split this into a couple different styles here.
+
+[ChrisShuler] 12:04:04
+So reading the input dataset. So this is…
+
+[ChrisShuler] 12:04:09
+The reason that OSDS layer.
+
+[ChrisShuler] 12:04:15
+And this is… that Oestia's job data frame.
+
+[ChrisShuler] 12:04:22
+And then this one… is going to be 2… straight A.
+
+[ChrisShuler] 12:04:35
+Signal. Sewer billing data, data frame.
+
+[ChrisShuler] 12:04:47
+The way that we're going to do that is merge… But first, we're going to import.
+
+[ChrisShuler] 12:04:54
+And clean up. And… merge the… different islands, sewer billing data. Right now, we have two, right?
+
+[ChrisShuler] 12:05:19
+And so, before we import… You want to clean it up in Excel, right?
+
+[ChrisShuler] 12:05:29
+What did we do to it in Excel, do you remember?
+
+[Aimee Schriber] 12:05:35
+Um… delete unnecessary columns, uh…
+
+[ChrisShuler] 12:05:44
+Oh yeah, removing any that don't have a bill, right?
+
+[Aimee Schriber] 12:05:47
+Mccupub. Yeah… Um, and then remove…
+
+[Aimee Schriber] 12:05:57
+Did we remove, um… the addresses that say no sewer service.
+
+[ChrisShuler] 12:06:07
+So we did that kind of cleaning step there, right?
+
+[ChrisShuler] 12:06:14
+And that kind of goes over here, so before we import.
+
+[ChrisShuler] 12:06:24
+Um, and then as we do that… So, take notes down here, maybe, and we'll just do this down here.
+
+[ChrisShuler] 12:06:50
+So, you know, you want to document what you did, right?
+
+[ChrisShuler] 12:06:54
+So that you remember what you did. And then if you document it somewhere random, you're just gonna lose it. But if you document it right here.
+
+[ChrisShuler] 12:07:00
+This is the place that you're going to be looking when you actually need to know what he did, so you can be like, what did I do?
+
+[ChrisShuler] 12:07:06
+I did these things, okay.
+
+[ChrisShuler] 12:07:12
+So for each island, you want to take those notes, right? So then you're going to import… And so this will be…
+
+[ChrisShuler] 12:07:26
+So then you're going to import the cleaned up copies.
+
+[ChrisShuler] 12:07:32
+And all, you know, all they should be saved, right? So you wanna… I mean, obviously, we have it saved in our email and stuff, but we should have it.
+
+[ChrisShuler] 12:07:40
+Marked out really well, so if we have to do this again, and we have to change some of these cleaning steps.
+
+[ChrisShuler] 12:07:44
+We know where we started, and we know which file we need to regenerate. You know, we know where we started, we know what we did.
+
+[ChrisShuler] 12:07:51
+And then we can add a step in here or something, and then regenerate our cleanup copy, right? So we should have those all saved and… in our structure here, in places that make sense. So… one of the things that I'll do often.
+
+[Aimee Schriber] 12:08:02
+Someone's rough. You know, stopping them.
+
+[Aimee Schriber] 12:08:07
+Someone who someone brought an ice tray.
+
+[ChrisShuler] 12:08:08
+Is… they've got data. And I'm just gonna… you can kind of organize this, but, like, raw data?
+
+[Aimee Schriber] 12:08:17
+The name of it. I saw it with the wine.
+
+[ChrisShuler] 12:08:17
+So this is not cleaned up at all, right? And then this can be, like…
+
+[Aimee Schriber] 12:08:23
+Yes, that's true. Okay, that looks like a GIS. So good.
+
+[Aimee Schriber] 12:08:29
+Um, and she might be a little illegal gay. Put that into the… Yeah, just dividend, just quickly, and then use it. I really hope that's it.
+
+[ChrisShuler] 12:08:32
+So then you can have your route add a file in there.
+
+[ChrisShuler] 12:08:34
+Your manually cleaned data file in there. And then you're actually, you know, this actually would go in there.
+
+[Aimee Schriber] 12:08:37
+I mean, I was literally only the… Customer support call restoring, and they were like, well, you try this, try not to… Was it working last week?
+
+[ChrisShuler] 12:08:43
+I just moved this, so know that I broke the link to it.
+
+[Aimee Schriber] 12:08:45
+It hasn't worked out, so that's why I'm like, I don't…
+
+[ChrisShuler] 12:08:46
+So this link is now broken.
+
+[ChrisShuler] 12:09:02
+Okay, so this is stuff that you do… Beforehand.
+
+[ChrisShuler] 12:09:09
+Okay.
+
+[ChrisShuler] 12:09:33
+Alright, so… and then, as you can kind of see in this notebook here.
+
+[ChrisShuler] 12:09:37
+So we've got kind of everything that you need, right? So we're going all the way from the start.
+
+[ChrisShuler] 12:09:44
+So this is what we started. Okay, so… we have something that we can pull in, we're going to call it the OSDS Geodata frame.
+
+[ChrisShuler] 12:09:53
+Let's read that in. Now it's a thing in our notebook.
+
+[ChrisShuler] 12:09:57
+Now, we're gonna import the sewer billing data data frames. Or create a data frame. But to do that, we need to do all this stuff first.
+
+[ChrisShuler] 12:10:05
+Trying to do that stuff first. And then here's the code that we're going to use that's well annotated.
+
+[ChrisShuler] 12:10:10
+To create a single… output.
+
+[ChrisShuler] 12:10:15
+Is just this. And it probably should just be, like.
+
+[ChrisShuler] 12:10:20
+A list of TMKs. Maybe, like, TMK's and Island.
+
+[ChrisShuler] 12:10:25
+Or whatever columns you think are useful. It doesn't really matter, honestly.
+
+[ChrisShuler] 12:10:29
+But, you know, you would only want columns that are in all of the files, right?
+
+[ChrisShuler] 12:10:36
+Those are the columns that are in all the files are TMK.
+
+[ChrisShuler] 12:10:38
+And the island. And then we know anything that's in that list does have sewer service, right? Because you've already.
+
+[ChrisShuler] 12:10:45
+You've already cut out. The no-service area ones, right?
+
+[ChrisShuler] 12:10:51
+No service ones. Um, so your output is, uh… single death drain.
+
+[ChrisShuler] 12:11:11
+And so that simplifies things, right? So it's like, now what you have is you have a list of every.
+
+[ChrisShuler] 12:11:16
+Tmk in the entire state that gets sewer service. Simple, right? You've taken all this complexity.
+
+[ChrisShuler] 12:11:22
+And you turn it into a two-frame… data frame, or a two-column data frame.
+
+[ChrisShuler] 12:11:30
+And then from there, you can do other stuff, right? You can identify which inside the sewer bill.
+
+[ChrisShuler] 12:11:35
+And, you know, way down this line, then we can start doing stuff with the laterals, right?
+
+[ChrisShuler] 12:11:49
+But does it kind of make sense here how… how to organize it.
+
+[Aimee Schriber] 12:11:56
+Yes.
+
+[ChrisShuler] 12:11:58
+Awesome. So yeah, let's make this… and you know, what I've got… I've got this located here.
+
+[ChrisShuler] 12:12:04
+This is, like, it's a mini-project, right? This is the little mini-project to clean up the OSDS inventory.
+
+[ChrisShuler] 12:12:10
+And then once we get done with this, we're gonna have this new, fabulously cleaned OSDS inventory.
+
+[ChrisShuler] 12:12:16
+Right? Um… And, you know, it's all gonna be on… It's all gonna be on GitHub, so we can all look at it, and we can all see it. So this is the… So this is the OSDS.
+
+[ChrisShuler] 12:12:32
+Inventory. Cleaning.
+
+[ChrisShuler] 12:12:44
+And we'll just call this V1 for now. Because if we have some really… if we're gonna do some… pretty different. You can always just version the stuff.
+
+[Aimee Schriber] 12:12:51
+So, I'm gonna work this month
+
+[ChrisShuler] 12:12:53
+And then you know which one's before the other one? Okay, so with that… a bunch of stuff changed.
+
+[ChrisShuler] 12:13:04
+So we're going to do. Heroes have to do a note when you… push that to GitHub, but… Okay, so I'm going to take this notebook.
+
+[ChrisShuler] 12:13:19
+Oh yeah, and then it doesn't like it when you have… stuff that's open in ARK.
+
+[ChrisShuler] 12:13:28
+Okay, hopefully that worked. And sometimes it even, if you have calculations and stuff going.
+
+[ChrisShuler] 12:13:35
+Sometimes you even have to, uh… shut down your kernel.
+
+[ChrisShuler] 12:13:42
+To push it up, because it does have these kind of, like, autosave lock files.
+
+[ChrisShuler] 12:13:47
+Okay, so everything's all good. Push it up there… So right now… It's reading it because it's like, oh, something's changing.
+
+[ChrisShuler] 12:14:01
+There you go, and so there's the notebook. Here's our data files.
+
+[ChrisShuler] 12:14:08
+It's all up there, right? So… when you start messing around with this.
+
+[ChrisShuler] 12:14:13
+Way to do this is to first install GitHub. So, because you can just download it, right?
+
+[ChrisShuler] 12:14:20
+You could just download. But then, all your saves won't be saved as well as if you.
+
+[ChrisShuler] 12:14:28
+Have it… have the GitHub repository on your computer like I do here.
+
+[ChrisShuler] 12:14:32
+You know, it would just be in your folder here. These are all the different GitHub repositories I have.
+
+[ChrisShuler] 12:14:38
+And then you can interact with it directly from GitHub Desktop.
+
+[ChrisShuler] 12:14:43
+That's… if that's too much to spin up on, we can… talk about that a little more later, but you can at least get to all the files from here, and start organizing them on your computer.
+
+[ChrisShuler] 12:14:52
+Like you would over here. And then maybe ask Amy if you need to, to help kind of upload stuff to GitHub.
+
+[ChrisShuler] 12:15:01
+Did you sign up for GitHub, though, and share your, um… Share your name.
+
+[ChrisShuler] 12:15:09
+And then I'll add you as a collaborator on this.
+
+[Autumn McCarter] 12:15:12
+Okay. I'll do that after.
+
+[ChrisShuler] 12:15:15
+Yeah, yeah, gotcha. All right. So, all the notes should be in the notebook, right? Like, everything we talked about? Um… I'll save the transcript from this, too.
+
+[ChrisShuler] 12:15:27
+So you can put it into ChatGBT and ask it for things.
+
