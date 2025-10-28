@@ -11,7 +11,8 @@ University of Hawai‘i Water Resources Research Center (WRRC)
 **Project Lead:** Dr. Chris Shuler  
 **Contributor:** Robert Litt  
 
-![GitHub last commit](https://img.shields.io/github/last-commit/RobertBlitt/ParcelAnalysis?label=Last%20Updated)
+![GitHub last commit](https://img.shields.io/github/last-commit/RobertBlitt/ParcelAnalysis?label=Last%20Updated&color=0A7BBB&style=flat&logo=github&logoColor=white)
+
 
 ---
 
