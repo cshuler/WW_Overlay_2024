@@ -1,0 +1,142 @@
+BEGIN PROMPT
+
+Task:
+Convert the following raw transcript or notes into a structured meeting summary for the HCPT Overlay Project.
+Follow the exact structure and narrative depth of the Maui County Wastewater Coordination Summary (October 2025).
+
+Output Format:
+
+Date/Context
+
+Describe the meeting date, setting, participants (with affiliations), and any relevant legislative or project context.
+
+Purpose
+
+State the purpose of the meeting:
+
+coordination
+
+feedback collection
+
+data alignment
+
+terminology review
+
+preparation for legislative briefing
+(or whatever is appropriate based on the transcript)
+
+Key Narratives and Findings
+1. Project Scope & Goals
+
+Summarize:
+
+Act 125 / 132 / 217 context
+
+HCPT project mandate
+
+deadlines, expected deliverables
+
+high-level goals expressed in the meeting
+
+importance for county or state policy
+
+2. Data Coordination
+
+Document:
+
+cesspool counts, cluster logic (≥50 in ⅛ mile)
+
+proximity thresholds
+
+Carollo polygons and cost data
+
+updates/corrections needed
+
+any specific GIS or shapefile issues
+
+what data each side agreed to share
+
+3. Terminology & Communication
+
+Capture discussion of terms such as:
+
+feasible
+
+technically possible
+
+proximal
+
+under study
+
+public messaging and disclaimers
+
+county concerns about misinterpretation
+
+4. County / Project-Specific Details
+
+Produce a table in this format:
+
+Area / Project	Status / Notes	Cost / Constraints
+Example	Example	Example
+
+Include:
+
+whether reclassification recommendations came from the County, UH team, or both
+
+disagreements or resistance
+
+infrastructure context
+
+pump stations, elevation barriers, DHHL boundaries
+
+economic feasibility information
+
+5. Cross-County / Coordination Issues
+
+Summarize any broader statewide issues mentioned, such as:
+
+data sharing differences among counties
+
+Carollo alignment challenges
+
+political sensitivities
+
+timing of Carollo data release
+
+legislative expectations
+
+6. Next Actions
+
+List specific follow-up tasks for:
+
+UH WRRC team
+
+County staff
+
+Carollo
+
+legislators (if relevant)
+
+Use clear bullet points.
+
+Core Takeaways
+
+Write a concise synthesis (3–5 sentences) addressing:
+
+the most important conclusions
+
+what changed
+
+where alignment was achieved
+
+where disagreements remain
+
+implications for statewide mapping and reporting
+
+Appendix Note
+
+Include this statement at the end:
+
+“Meeting notes and summary from the October 17 meeting will be amended here or may be compiled as a separate document and referenced in future versions.”
+
+END PROMPT
