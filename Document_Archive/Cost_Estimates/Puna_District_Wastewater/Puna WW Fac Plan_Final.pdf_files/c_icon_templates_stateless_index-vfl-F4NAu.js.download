@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e7e81c1d-1189-3393-93b8-8f4cf2fff569")}catch(e){}}();
+define(["exports","react","./e_file_viewer_static_scl_page_file","./c_spectrum_svg_icon_bundle"],(function(e,t,n,r){"use strict";function c(e){if(e&&e.__esModule)return e;var t=Object.create(null);return e&&Object.keys(e).forEach((function(n){if("default"!==n){var r=Object.getOwnPropertyDescriptor(e,n);Object.defineProperty(t,n,r.get?r:{enumerable:!0,get:function(){return e[n]}})}})),t.default=e,Object.freeze(t)}var a=c(t);const s=({name:e,icon:t,className:c,role:s="img",...o})=>{const l=n.cx(r.getClassNamesForName("stateless",e),c);return a.cloneElement(t,{className:l,role:s,...o})};s.displayName="Component",s.displayName="IconTemplateStateless",e.Component=s}));
+//# sourceMappingURL=c_icon_templates_stateless_index.js-vflwFUXbV.map
+
+//# debugId=e7e81c1d-1189-3393-93b8-8f4cf2fff569

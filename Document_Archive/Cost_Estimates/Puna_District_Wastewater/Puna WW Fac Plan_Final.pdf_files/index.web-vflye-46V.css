@@ -1,0 +1,26 @@
+/** @generated -- This file is automatically synced from @dropbox/dig-illustrations@4.5.0. DO NOT MODIFY! **/
+
+/**
+  This file should not be imported into your CSS or SASS files - the CSS variables will be available on the page for you to use.
+  (SEE #design-systems ON SLACK if you have questions)
+**/
+
+/* vanilla-extract-css-ns:src/index.css.ts.vanilla.css?source=LmRpZy0xM29yNG1yMF80LTUtMCB7CiAgY29sb3I6IHZhcigtLWRpZy1jb2xvcl9faWxsdXN0cmF0aW9uX19keW5hbWljLWxpbmUpOwogIGhlaWdodDogMTAwJTsKICB3aWR0aDogMTAwJTsKICBtaW4taGVpZ2h0OiA2NHB4Owp9Ci5kaWctMTNvcjRtcjFfNC01LTAgewogIGNvbG9yOiB2YXIoLS1kaWctY29sb3JfX2lsbHVzdHJhdGlvbl9fZHluYW1pYy1saW5lKTsKICBoZWlnaHQ6IDEwMCU7CiAgd2lkdGg6IDEwMCU7CiAgbWluLWhlaWdodDogMjAwcHg7Cn0KLmRpZy0xM29yNG1yMl80LTUtMCB7CiAgY29sb3I6IHZhcigtLWRpZy1jb2xvcl9faWxsdXN0cmF0aW9uX19keW5hbWljLWxpbmUpOwogIGhlaWdodDogMTAwJTsKICB3aWR0aDogMTAwJTsKICBtaW4taGVpZ2h0OiAzMzhweDsKfQ== */
+.dig-13or4mr0_4-5-0 {
+  color: var(--dig-color__illustration__dynamic-line);
+  height: 100%;
+  width: 100%;
+  min-height: 64px;
+}
+.dig-13or4mr1_4-5-0 {
+  color: var(--dig-color__illustration__dynamic-line);
+  height: 100%;
+  width: 100%;
+  min-height: 200px;
+}
+.dig-13or4mr2_4-5-0 {
+  color: var(--dig-color__illustration__dynamic-line);
+  height: 100%;
+  width: 100%;
+  min-height: 338px;
+}

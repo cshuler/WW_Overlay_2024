@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9e17f3fb-de5b-3f22-b285-041180042c1d")}catch(e){}}();
+define(["exports","react"],(function(e,t){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}var o=l(t);const r=e=>{const t=void 0===e.color?"var(--dig-color__glyph__accent, #0061fe)":e.color,l={...e};return delete l.color,o.default.createElement("svg",{...l,xmlns:"http://www.w3.org/2000/svg",role:"img",width:"32px",height:"32px",viewBox:"0 0 32 32",style:{fill:t}},o.default.createElement("title",null,e.alt),o.default.createElement("path",{d:"M8 2.4l8 5.1-8 5.1-8-5.1 8-5.1zm16 0l8 5.1-8 5.1-8-5.1 8-5.1zM0 17.7l8-5.1 8 5.1-8 5.1-8-5.1zm24-5.1l8 5.1-8 5.1-8-5.1 8-5.1zM8 24.5l8-5.1 8 5.1-8 5.1-8-5.1z"}))};r.displayName="DropboxLogo",e.DropboxLogo=r}));
+//# sourceMappingURL=c_maestro_nav_shared_code_dropbox_logo.js-vflv9Q1-1.map
+
+//# debugId=9e17f3fb-de5b-3f22-b285-041180042c1d

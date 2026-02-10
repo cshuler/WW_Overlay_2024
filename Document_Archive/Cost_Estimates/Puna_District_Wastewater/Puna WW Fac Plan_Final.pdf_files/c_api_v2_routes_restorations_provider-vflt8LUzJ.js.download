@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="60958c27-2cd8-3798-abf4-746bfdfec772")}catch(e){}}();
+define(["exports"],(function(e){"use strict";class t{constructor(e=(()=>{})){this._mapper=e}static getInstance(){return t._instance||(t._instance=new t),t._instance}static reset(){t._instance=new t}setMapper(e){this._mapper=e}resolve(){let e="";try{e=this._mapper(window.location)}catch(e){}return e||""}}t._instance=null;const n=t.getInstance(),s=new Set;e.GetRestorationsRoutes=function(e){return e.ns("restorations")},e.get_registered_tags=function(){const e=[];return s.forEach((t=>e.push(t))),e},e.register_tag=function(e){s.add(e)},e.resolveRouteName=()=>n.resolve(),e.setRouteNameMapper=e=>{n.setMapper(e)},e.unregister_tag=function(e){s.delete(e)}}));
+//# sourceMappingURL=c_api_v2_routes_restorations_provider.js-vflv9i_Uh.map
+
+//# debugId=60958c27-2cd8-3798-abf4-746bfdfec772
