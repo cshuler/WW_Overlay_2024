@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="414eab9e-a755-3b4a-b5c8-0a341263e58b")}catch(e){}}();
+define(["exports","react","./e_core_exception"],(function(e,t,s){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}var i=n(t);const l={};function a(e){e.includes("-vfl")||(e=>e.startsWith("https://assets.dropbox.com/"))(e)||null!=l[e]||(l[e]=!0,s.reportStack(`Non-VFL path detected: ${e}.  This usually means that the image doesn't exist and is 404ing; though another possibility is that the image exists but vfl cache busting isn't being applied, which can happen when the url is a relative url, since we generally don't vfl relative urls.`))}e.Image=e=>{const{ref:t,src:s,srcHiRes:n,alt:l,...r}=e;if(!s)return null;let c;var u;return a(s),null!=(u=s)&&u.endsWith(".svg")||!n?c=s:(a(n),c=n+" 2x"),i.default.createElement("img",{src:s,srcSet:c,alt:null!=l?l:"",...r})}}));
+//# sourceMappingURL=c_ui_image.js-vflTslCmF.map
+
+//# debugId=414eab9e-a755-3b4a-b5c8-0a341263e58b

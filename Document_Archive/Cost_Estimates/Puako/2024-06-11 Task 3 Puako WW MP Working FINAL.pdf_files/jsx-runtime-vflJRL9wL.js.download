@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="56185f02-cde9-34b6-8f30-3c2c901d2f11")}catch(e){}}();
+define(["../c_react-use_useEffectOnce","../c_lodash-es_lodash","../c_bem","react"],(function(e,c,s,t){"use strict";return window.BUNDLE_GENERATOR="rollup",e.jsxRuntime}));
+//# sourceMappingURL=jsx-runtime.js-vflyyFXcI.map
+
+//# debugId=56185f02-cde9-34b6-8f30-3c2c901d2f11

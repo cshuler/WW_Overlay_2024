@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="574a51d6-fbb7-3063-9d3e-153528c8c49a")}catch(e){}}();
+define(["exports","./c_hive_schemas_sharing-request_access_user_events","./c_security_csrf_hmac","./c_core_toast_toast_on_init"],(function(t,e,n,s){"use strict";const o=1;async function c(t,e,s){const c=function(t){switch(t){case"error":return"er:";case"ok":return"ok:"}}(e)+t,a=encodeURIComponent(c),r=await async function(t,e){const s=await n.hmacMessage(n.stringToBytes(t),n.stringToBytes(e)),o=n.bytesToString(s),c=btoa(o);return encodeURIComponent(c)}(null!=s?s:"",a);return o+":"+a+":"+r}t.toastOnNextPageLoad=async function(t,n){const o=await c(t,n,e.mustReadCsrfToken());e.Cookies.create(s.toastCookieName(),o,1)}}));
+//# sourceMappingURL=c_core_toast.js-vflNfeJDw.map
+
+//# debugId=574a51d6-fbb7-3063-9d3e-153528c8c49a
