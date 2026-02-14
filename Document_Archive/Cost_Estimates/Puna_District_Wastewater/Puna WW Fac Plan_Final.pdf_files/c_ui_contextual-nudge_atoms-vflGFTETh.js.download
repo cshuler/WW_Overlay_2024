@@ -1,5 +1,0 @@
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7a9c8cdb-6364-3e6c-b2a4-dfaa65f1dd9d")}catch(e){}}();
-define(["exports","./e_file_viewer_static_scl_page_file"],(function(e,t){"use strict";const i=t.atom(!1);e.showCreateTeamModalAtom=i}));
-//# sourceMappingURL=c_ui_contextual-nudge_atoms.js-vfli07oHp.map
-
-//# debugId=7a9c8cdb-6364-3e6c-b2a4-dfaa65f1dd9d

@@ -1,5 +1,0 @@
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="dddcad01-7de2-3bbd-9cb2-d9383499824f")}catch(e){}}();
-define(["exports","./c_dotlottie_common_chunk-B7OIQIGJ","./c_security_csrf_hmac","./c_core_toast_toast_on_init"],(function(t,o,n,e){"use strict";const c=1;async function s(t,o,e){const s=function(t){switch(t){case"error":return"er:";case"ok":return"ok:"}}(o)+t,a=encodeURIComponent(s),r=await async function(t,o){const e=await n.hmacMessage(n.stringToBytes(t),n.stringToBytes(o)),c=n.bytesToString(e),s=btoa(c);return encodeURIComponent(s)}(null!=e?e:"",a);return c+":"+a+":"+r}t.toastOnNextPageLoad=async function(t,n){const c=await s(t,n,o.mustReadCsrfToken());o.Cookies.create(e.toastCookieName(),c,1)}}));
-//# sourceMappingURL=c_core_toast.js-vflWizbmV.map
-
-//# debugId=dddcad01-7de2-3bbd-9cb2-d9383499824f

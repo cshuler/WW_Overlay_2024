@@ -1,5 +1,0 @@
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0d9d40c6-c123-3902-98fa-620e4928ca4a")}catch(e){}}();
-define(["exports","./e_file_viewer_static_scl_page_file"],(function(e,t){"use strict";const i=t.createSlot("DIG_Slot");e.Slot=i}));
-//# sourceMappingURL=c_dig-foundations__global_slot.js-vflnU1uK9.map
-
-//# debugId=0d9d40c6-c123-3902-98fa-620e4928ca4a
