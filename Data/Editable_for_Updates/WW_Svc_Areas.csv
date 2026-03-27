@@ -1,0 +1,96 @@
+﻿wwtp_name,permit,Docs,Notes,ImageURL,Verificati,Shape_Leng,Shape_Area,AddNote,PubOrPriv,Acres
+ ,000, , , , ,85.522248767500002,274.578141580000022, ,Private,67.674072371999998
+ ,000, , , , ,2621.649595750000117,388401.728355000028387, , ,85.284053468300002
+ ,101, , , , ,3362.168729429999985,329200.647965000011027, , ,70.666973815600002
+ATC Makena Waste Water Reclamation,116,https://drive.google.com/drive/folders/18mbYSjWY0FWPMdheCTPpO3uOLx1QoTuz?usp=drive_link,"Original polygon from County was smaller and named ""Makena Resort - 720,000 gpd"". This polygon is from ATC Makena disaster mitigation filing with PUC. ""New Service Area"" is also part of their map but a separate polygon as we are unsure of status.",https://uhm.maps.arcgis.com/sharing/rest/content/items/9417c12672dd468aa8fe4bcfb728e1b8/data, ,15041.882132500000807,3574089.582419999875128, ,Private,769.477925085000038
+ATC Makena Waste Water Reclamation,116,https://drive.google.com/drive/folders/18mbYSjWY0FWPMdheCTPpO3uOLx1QoTuz?usp=drive_link,"This polygon is from ATC Makena disaster mitigation filing with PUC. ""New Service Area"" may only be proposed and may not reflect current WW system extent.",https://uhm.maps.arcgis.com/sharing/rest/content/items/9417c12672dd468aa8fe4bcfb728e1b8/data, ,9806.421769480000876,3249254.366469999775290, ,Private,699.495264140000018
+"Pukalani WWTP - 400,000 gpd",118,https://drive.google.com/drive/folders/1FGRHByYfJfOOvMONkG6vgWoHVoaPzjAs?usp=drive_link,HWSC shapefile is general but mostly matches PUC filing for disaster mitigation. OSDS in this area may be mistakes.,https://uhm.maps.arcgis.com/sharing/rest/content/items/6ee88a4ae9c242de8e1e61f2a466cd33/data, ,16411.509567000000970,3580931.010629999917001, ,Private,727.018549776999976
+"- REMOVE Kapalua Waste Treatment Company, Ltd.",125,https://drive.google.com/drive/folders/1cd_dByAdE2IVTtJ-dpQ-wYbh_GOlmgRD?usp=drive_link,Drawn from HWSC filing for disaster mitigation but  Kapalua Mauka separate because seems like a future plan and cover two whole big parcels. Area outlined in blue also excluded because it probably reflects even more tentative plans,https://uhm.maps.arcgis.com/sharing/rest/content/items/18db1e87558b4ccfa6750892f567a923/data, ,9075.034170929999163,2946501.426250000018626, ,Private,631.438181249999957
+- REMOVE Kapalua Mauka,125,https://drive.google.com/drive/folders/1cd_dByAdE2IVTtJ-dpQ-wYbh_GOlmgRD?usp=drive_link,"Mauka portion shown on HWSC disaster mitigation filing with PUC. Appears to be a planned expansion and the polygon consists of whole parcels, IE not an actual extent of sewer infrastructure",https://uhm.maps.arcgis.com/sharing/rest/content/items/18db1e87558b4ccfa6750892f567a923/data, ,10438.369358399999328,4324561.123010000213981, ,Private,926.929779867999969
+Schofield WWTP,141, ,Polygons for Schofield and Helemano circular area from Aqua Engineers PE, , ,31165.771185599998716,20258525.053700000047684, ,Private,4592.872176609999769
+Hawaii American Water Company Hawaii Kai Operations,202,https://drive.google.com/drive/folders/13xX0sURtPK3FHoiCc7riYjrFn5Yq62r4?usp=drive_link,HAWC service area map extends to apex ridge. Undeveloped land unlikely to have mains have been removed. State and county parks included as they appear to have sewer service.,https://uhm.maps.arcgis.com/sharing/rest/content/items/b68d1dcdb4714435845ecf7afcb2b74b/data,Confirmed by HAWC reps,50656.452850499998021,16979027.808400001376867, ,Private,3624.451408339999944
+ ,213, , , , ,13085.091457799999262,2947333.034190000034869, ,Public,626.137229571000034
+Turtle Bay,237,https://drive.google.com/drive/folders/1f1I-Q68aRYArwWQRpjXUjtHJcMUbBM2X?usp=drive_link,Turtle Bay represents service area as entire golf course area and Kawela Bay Park. But mains and force mains cover narrow area covering western buildings and development in center of golf course. Effluent lines for injection wells and pond extend east,https://uhm.maps.arcgis.com/sharing/rest/content/items/455916e8841141e8a90535f57c48aece/data,Confirmed by Aqua Engineers PE,5779.675671650000368,1044437.882529999944381, ,Private,221.713950331999996
+ ,302, , , , ,109232.600747000004048,12289527.456399999558926, ,Public,3313.953465250000136
+ ,304, , , , ,200.289878651999999,979.351713002999986, ,Public,9.649614089860000
+ ,305, , , , ,11900.869949199999610,866655.103596000000834, ,Public,231.604387328999991
+ ,306, , , , ,16230.384905099999742,1124902.735110000008717, ,Public,253.829951947000012
+ ,307, , , , ,18439.934769200001028,3664221.838250000029802, , ,775.600677430000019
+ ,308, , , , ,27954.575540999998339,10849159.755599999800324, ,Public,1948.619393429999946
+ ,309, , , , ,62.936863641400002,92.101866365099994, ,Public,444.833272573999977
+ ,309, , , , ,501.797947439999973,16717.605816399998730, , ,3.529885731940000
+ ,309, , , , ,195.864891626000002,2151.598327650000101, , ,0.454350996127000
+ ,310, , , , ,14661.854286300000240,1627182.153350000036880, , ,344.188479164000000
+ ,310, , , , ,117.447932489999999,838.366597794999961, , ,0.177325353642000
+ ,310, , , , ,119.416420504000001,871.687011233000021, , ,0.184372730364000
+ ,310, , , , ,139.729921485999995,1056.058320919999915, , ,0.223400201285000
+ ,310, , , , ,124.966670171000004,914.195185187999982, , ,0.193365432405000
+ ,310, , , , ,123.819360832000001,826.770589717999997, , ,0.174873582774000
+ ,310, , , , ,115.367844661999996,802.656504616999996, , ,0.169771625502000
+ ,310, , , , ,121.492413713999994,907.126641980000045, , ,0.191867974206000
+ ,310, , , , ,118.947753879999993,859.444159019000040, , ,0.181782241436000
+ ,310, , , , ,122.575663395999996,791.502339140000004, , ,0.167435399850000
+ ,310, , , , ,219.952482529000008,1870.862384080000083, , ,0.395758180859000
+ ,310, , , , ,133.881614154999994,1114.757607569999891, , ,0.235786829998000
+ ,310, , , , ,134.087592172999990,1034.584334989999888, , ,0.218828583640000
+ ,310, , , , ,125.201424252999999,973.229004650999968, , ,0.205850750429000
+ ,310, , , , ,162.064415289000010,1323.659792279999920, , ,0.280009839337000
+ ,310, , , , ,150.250896047999987,1171.390965320000078, , ,0.247798204988000
+ ,310, , , , ,131.801575178000007,1062.092446119999977, , ,0.224647209926000
+ ,310, , , , ,103.941368139000005,665.150082318000045, , ,0.140691050566000
+ ,310, , , , ,130.458069872000010,201.498869141999990, , ,0.042619917404500
+ ,310, , , , ,104.166333284999993,668.490479851000032, , ,0.141395077982000
+ ,310, , , , ,137.462640270999998,1109.216149860000087, , ,0.234613657695000
+ ,310, , , , ,133.019481512999988,1000.746588829999951, , ,0.211670377124000
+ ,310, , , , ,117.717975385000003,800.984748287000002, , ,0.169419823731000
+ ,310, , , , ,118.446288641999999,821.077759631000049, , ,0.173669122344000
+ ,310, , , , ,117.975405850000001,849.357214100999954, , ,0.179650313679000
+ ,310, , , , ,123.117677279999995,886.298033003000000, , ,0.187463218260000
+ ,310, , , , ,125.338768032000004,898.547645869999997, , ,0.190053852842000
+ ,310, , , , ,72.320170394100003,66.668103891399994, , ,0.014101103657400
+ ,310, , , , ,145.405492302999988,1313.713389000000006, , ,0.277905916547000
+ ,310, , , , ,126.620720101000003,837.525963669000021, , ,0.177171134992000
+ ,310, , , , ,154.021250476000006,1474.893745670000044, , ,0.312000057752000
+ ,311, , , , ,10757.245032200000423,3112186.661569999996573, ,Public,668.458898483999974
+ ,312, , , , ,53621.615583400001924,20895260.436000000685453, ,Public,4493.917500530000325
+ ,313, , , , ,72740.071095799998147,16034252.294600000604987, ,Public,3439.062613839999813
+ ,314, , , , ,91780.811167299994850,41084086.684399999678135, ,Public,8817.370704240000123
+ ,315, , , , ,9422.152113530000861,1567472.098089999984950, ,Public,335.499301003000028
+ ,317, , , , ,291190.755671999999322,175294086.573000013828278, ,Public,37376.558452400000533
+ ,318, , , , ,6676.834560170000259,1300927.588920000009239, ,Public,276.252323519000015
+ ,319, , , , ,130899.714466999997967,43003121.110600002110004, ,Public,9165.619905659999858
+ ,322, , , , ,3043.393093239999871,297114.863141999987420, , ,63.181895738000001
+ ,323, , , , ,176425.881472999986727,152062875.479999989271164, ,Public,32449.116149400000722
+ ,324, , , , ,29116.672414600001503,7251325.386309999972582, , ,1543.492671960000052
+ ,325, , , , ,70052.384027399995830,27273088.215900000184774, ,Public,5810.021263679999720
+ ,326, , , , ,15522.281134299999394,4089395.182120000012219, ,Public,872.383470228999954
+HOH Utilities Hyatt Resort,409,https://drive.google.com/drive/folders/11zzdKugYZGh15uyjkg8RTP4GKIZ2KC1c?usp=drive_link,Need to verify with other sources,https://uhm.maps.arcgis.com/sharing/rest/content/items/427a62833cdf458f8b760af27197b207/data, ,3367.621291869999823,411571.470511000021361, ,Private,87.160800662400007
+Kukui'ula,428,https://drive.google.com/drive/folders/1bX4GnQYH5C0QvK-ibQxlnzWWlL0Qnta6?usp=drive_link,There is a Kukui'ula WWTP but it feeds water to HWSC Poipu per press release. Polygon from Kauai County was modified to match PUC filings,https://uhm.maps.arcgis.com/sharing/rest/content/items/2eee91c9045348aaa133271aec51e433/data, ,13081.763948300000266,5118259.005140000022948, ,Private,1083.677096169999913
+Poipu Water Reclamation Facility,428,https://drive.google.com/drive/folders/11zzdKugYZGh15uyjkg8RTP4GKIZ2KC1c?usp=drive_link,Mapped per Expanded Service Area filing by previous owner HOH Utilities docket 2021-0147,https://uhm.maps.arcgis.com/sharing/rest/content/items/427a62833cdf458f8b760af27197b207/data, ,22561.627218500001618,3201221.611190000083297, ,Private,545.855556152999952
+Princeville Resort,431,https://drive.google.com/drive/folders/1N7AHxol2iQWgZ0Ngw8UmjWSPx3J71o1A?usp=drive_link,County but may be associated with private company?,Image Not Available,Partly confirmed by Princeville Utilities,14728.311819099999411,5629882.968439999967813, ,Private,1186.500255129999914
+Puhi Sewer and Water,439,https://drive.google.com/drive/folders/1_semc1A1iD5ZUU1Mj3eDpPyFwNyE_UaF?usp=drive_link,Polygon from Kauai County but adjusted to remove neighborhoods with OSDS supported by real estate listings,Image Not Available,Confirmed by Aqua Engineers,24936.883797400001640,5559590.825360000133514, ,Private,1175.894844980000016
+ ,512, , , , ,16722.928141899999900,8579461.758009999990463, ,Public,1868.538202440000077
+Kalahuipua'a Lagoons Treatment Facility fka: Mauna Lani WWTP,531,https://drive.google.com/drive/folders/1jtYs6m2B_kutBZwSN6htokEQb3PmDuHQ?usp=drive_link, ,https://uhm.maps.arcgis.com/sharing/rest/content/items/bc696b15e615482bb084e5069966364d/data,Confirmed by HAWC,21826.761943800000154,6450776.433410000056028, ,Private,1401.339112010000008
+Punaluu Water and Sanitation Corporations,535,https://drive.google.com/drive/folders/10RUFK370aCBFrRb1zyBJQrrHYYEOa1yG?usp=drive_link,Mapped per disaster mitigation filing with PUC but maps also show individual developments in DARKER blue. Mains likely don't cover entire area shown https://bigislandnow.com/2025/03/20/private-utility-company-requesting-temporary-water-wastewater-rate-in,https://uhm.maps.arcgis.com/sharing/rest/content/items/e4e6ee9f1e3a434ab42ffbaeb44bfc2d/data,Confirmed by Punaluu previous operator Alan Fukamizu,9004.251519690000350,2071895.044609999982640, ,Private,454.546408337000003
+Waikoloa Resort WRF,540,https://drive.google.com/drive/folders/1Sm7XxePN6EjIZkJShcWJlVHqq45ao4yY?usp=drive_link,Follows roadway for a great distance but may be due to parcel boundaries rather than extent of mains,https://uhm.maps.arcgis.com/sharing/rest/content/items/0aca38f2161f4e168d0474977c8b6a32/data, ,41575.511698299997079,8044347.447990000247955, ,Private,1747.921718529999907
+Waikoloa Village Wastewater Treatment Plant (A-Plant),541,https://drive.google.com/drive/folders/1bJBFGjiARevH1ecS9NSBpaoOLYTCndHZ?usp=drive_link,Accurate sewer polygon from PUC disaster mitigation filing,https://uhm.maps.arcgis.com/sharing/rest/content/items/e5951cd76a9e43ad99ab36959a6d588b/data, ,20618.246774399998685,10157409.324500000104308, ,Private,2206.363532610000220
+ ,550, , , , ,5380.755266799999845,427327.577457999985199, ,Public,129.444413854000004
+ ,550, , , , ,513.502814743000044,11913.561902699999337, ,Public,7.395491713260000
+South Kohala WWRF,551,https://drive.google.com/drive/folders/1sr_oX-eYisOJqAkkppJm3R7LQBIQqksz?usp=drive_link, ,https://uhm.maps.arcgis.com/sharing/rest/content/items/65a1c180ac144e0f9bab36e36e23b19a/data, ,10622.961307800000213,4633980.562939999625087, ,Private,1005.890707089999978
+"Waimea Wastewater Company, Inc. fka Parker Ranch",555,https://drive.google.com/drive/folders/1ZI8FCMCnn5zx4KVt8rrBgEqVy78i1P9o?usp=drive_link,Mapped per PUC filing for disaster mitigation. Includes several large undeveloped areas but all within urban area and probably within range of main,https://uhm.maps.arcgis.com/sharing/rest/content/items/dbf1796c44f3497f9fae1679007fdab6/data,Confirmed by HAWC,7846.491305460000149,1772889.935929999919608, ,Private,384.776397802000020
+Hualalai Four Seasons (Kaupulehu) Interim WWTP,556,https://drive.google.com/drive/folders/1jrxi2Y-KRnUNlOxusNqm1B4sZCx_d96_?usp=drive_link,Aqua Engineers operates,https://uhm.maps.arcgis.com/sharing/rest/content/items/047faa8327604f1eb06657facb8e95fb/data,Confirmed by Aqua Engineers,10374.546910499999285,3545454.102409999817610, ,Private,771.363045510999996
+"North Kona Coast WWTF aka :""Kukio WWTF""",565,https://drive.google.com/drive/folders/1ik_iEgfrstBgxa8QzH_cbQfbzx4LP9CI?usp=drive_link,PUC disaster mitigation filing shows much larger area extending mauka,https://uhm.maps.arcgis.com/sharing/rest/content/items/76e5081fbe1c40d9ab8433ea867ee1fd/data, ,11540.208738400000584,4857645.805529999546707, ,Private,1057.055117670000072
+Kaluakoiʻi WWTP,603,https://drive.google.com/drive/folders/168AKdnG4fMR7l6_al13BzR6NzCYEBKs8?usp=drive_link, ,https://uhm.maps.arcgis.com/sharing/rest/content/items/5fcf4c0617e242fabc5f6a72906ba913/data,MOSCO confirmed service area but not numbers,4989.862257699999645,302219.360800999973435, ,Private,64.603555946000000
+ ,603, , , , ,4674.886253470000156,295186.604327999986708, , ,63.100115194600001
+ ,605, , , , ,3823.428390120000131,267997.838507000007667, , ,57.313982636500000
+Maunaloa Stabilization Ponds,606,https://drive.google.com/drive/folders/168AKdnG4fMR7l6_al13BzR6NzCYEBKs8?usp=drive_link, ,https://uhm.maps.arcgis.com/sharing/rest/content/items/d6d9fbac73264c3da985545a2da4c802/data,MOSCO confirmed service area but not numbers,7277.141600689999905,866654.289109000004828, ,Private,185.394687457000003
+ ,606, , , , ,3961.772968860000219,574210.271758000017144, , ,122.834560895999999
+Manele Bay WWTP,701,https://drive.google.com/drive/folders/1VADHrPoQs5jws4IR-f6ANRlJC6BSosco?usp=drive_link,We have no cesspool data for Lanai but if any exist they would probably be too distant from Manele,Image Not Available,Confirmed by Pulama Lanai,7688.798685169999771,1120306.922139999922365, ,Private,240.893118794000003
+Kalaeloa,903,https://drive.google.com/drive/folders/1utrKttejkJ2uGzlDWuoqu27jCc-wUjyB?usp=drive_link,County sewer mains cover most of this area. Need to check accuracy of shape.,https://uhm.maps.arcgis.com/sharing/rest/content/items/e76faf98e2d9469ca0d3ac68b3e434ec/data, ,20041.494930299999396,17458195.227699998766184, ,Public,3725.571238300000005
+Poipu Water Reclamation Facility,428,https://drive.google.com/drive/folders/11zzdKugYZGh15uyjkg8RTP4GKIZ2KC1c?usp=drive_link,Mapped per Expanded Service Area filing by previous owner HOH Utilities docket 2021-0147,https://uhm.maps.arcgis.com/sharing/rest/content/items/427a62833cdf458f8b760af27197b207/data, ,22561.627218500001618,3201221.611190000083297, ,U,37.476541118000000
+Poipu Water Reclamation Facility,428,https://drive.google.com/drive/folders/11zzdKugYZGh15uyjkg8RTP4GKIZ2KC1c?usp=drive_link,Mapped per Expanded Service Area filing by previous owner HOH Utilities docket 2021-0147,https://uhm.maps.arcgis.com/sharing/rest/content/items/427a62833cdf458f8b760af27197b207/data, ,22561.627218500001618,3201221.611190000083297, ,Private,94.490221128300007
+ , , , , , ,0.000000000000000,0.000000000000000, ,Private,531.231726490000028
+ , , , , , ,0.000000000000000,0.000000000000000, ,Public,57.988408238200002
+ , , , , , ,0.000000000000000,0.000000000000000, ,Public,3000.842386920000081
+ , , , , , ,0.000000000000000,0.000000000000000, ,Private,1427.562254720000055
+ ,303, , , , ,0.000000000000000,0.000000000000000, ,Public,1192.014895020000040
