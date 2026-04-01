@@ -1,0 +1,101 @@
+UID,tractname,island,P1_Count,P2_Count,P3_Count,Join_Count,Systemtyp2,Cost_per_k,CP_total_N,Infill,Flow_rt
+H-18,Test,Test,0,0,1152,1154,Package Plant or IWS,0,43852,,320812
+H-19,Pahoa- Makai,Hawaii,0,0,213,213,Package Plant or IWS,0,8094,,59214
+H-20,Kalapana-Kapoho,Hawaii,0,0,187,187,Package Plant or IWS,0,7106,,51986
+H-21,Kalapana-Kapoho,Hawaii,0,0,44,44,Package Plant or IWS,0,1672,,12232
+H-1,Kau,Hawaii,0,0,58,60,County,3785,2272,,16680
+H-2,Test,Hawaii,0,0,46,43,County,6756,1628,,11954
+H-22,South Kona,Hawaii,0,0,120,120,Package Plant or IWS,0,4560,,33360
+H-23,Konawaena,Hawaii,0,0,187,187,Package Plant or IWS,0,7106,,51986
+H-24,Konawaena,Hawaii,0,0,110,110,Package Plant or IWS,0,4180,,30580
+H-25,Konawaena,Hawaii,0,0,314,314,Package Plant or IWS,0,11932,,87292
+H-16,Kahalu'u Mauka,Hawaii,0,148,0,148,County/Private,10385,5604,,41144
+H-17,Holualoa,Hawaii,1543,5,1,1549,County/Private,2104,58653,,430622
+H-3,Pua'a,Hawaii,88,0,0,88,County,9183,3332,Yes,24464
+H-4,Kailua,Hawaii,680,0,0,680,County,2229,25748,,189040
+H-5,Kealakehe,Hawaii,110,393,0,503,County,2126,19046,,139834
+H-26,Kalaoa,Hawaii,0,0,1616,1616,Package Plant or IWS,0,61408,,449248
+H-27,North Kohala,Hawaii,0,0,331,331,Package Plant or IWS,0,12578,,92018
+H-28,North Kohala,Hawaii,0,0,222,222,Package Plant or IWS,0,8436,,61716
+H-39,Waimea - Kohala,Hawaii,10,0,273,283,Private,0,10754,,78674
+H-40,Waimea - Pu'u Anahulu,Hawaii,0,0,585,585,Private,0,22230,,162630
+H-41,Waimea - Kohala,Hawaii,0,0,225,225,Private,0,8550,,62550
+H-29,Waimea - Kohala,Hawaii,0,0,181,181,Package Plant or IWS,0,6878,,50318
+H-30,Waimea - Kohala,Hawaii,0,0,244,244,Package Plant or IWS,0,9272,,67832
+H-31,Waimea - Pu'u Anahulu,Hawaii,0,0,253,253,Package Plant or IWS,0,9614,,70334
+H-6,Honokaa-Kukuihaele,Hawaii,0,0,631,631,County,2813,23893,,175418
+H-7,Paauhau-Paauilo,Hawaii,0,0,115,115,County,5558,4354,,31970
+H-32,Paauhau-Paauilo,Hawaii,0,0,139,139,Package Plant or IWS,0,5282,,38642
+H-33,North Hilo,Hawaii,0,0,129,129,Package Plant or IWS,0,4902,,35862
+H-8,Paukaa-Wailea,Hawaii,0,0,202,202,County,4667,7649,,56156
+H-9,Hilo: Upper Waiakea Forest Reserve,Hawaii,0,0,170,170,County,8094,6437,,47260
+H-10,Hilo: Upper Waiakea Forest Reserve,Hawaii,0,0,166,166,County,7048,6286,,46148
+H-34,Hilo: Kahuku-Kaumana,Hawaii,0,0,129,129,Package Plant or IWS,0,4902,,35862
+H-35,Hilo: Kahuku-Kaumana,Hawaii,0,0,125,125,Package Plant or IWS,0,4750,,34750
+H-11,Hilo: Kahuku-Kaumana,Hawaii,0,0,305,305,County,8079,11549,,84790
+H-12,Hilo:  Piihonua-Kaumana,Hawaii,0,0,1919,1919,County,2341,72663,,533482
+H-13,Hilo:  Villa Franca-Kaikoo,Hawaii,0,198,0,198,County,6429,7497,Yes,55044
+H-14,Hilo:  Puainako,Hawaii,0,737,4469,5206,County,1862,197124,,1447268
+H-36,Keaau,Hawaii,0,0,188,188,Package Plant or IWS,0,7144,,52264
+H-37,Volcano-Mt. View,Hawaii,0,0,109,109,Package Plant or IWS,0,4142,,30302
+H-15,Hilo: Keaukaha-Panaewa,Hawaii,0,189,0,189,County,3074,7156,Yes,52542
+H-38,Orchidland-Ainaloa,Hawaii,0,0,624,624,Package Plant or IWS,0,23712,,173472
+M-1,Waihee-Waikapu,Maui,0,161,0,161,County,7677,6096,Yes,44758
+M-2,Kamaile St.,Maui,0,0,58,58,County,17348,2196,,16124
+M-3,Waihee-Waikapu,Maui,0,79,0,79,County,12937,2991,,21962
+M-4,Kahoma,Maui,252,0,0,252,County,4213,9542,Yes,70056
+M-7,Kula Makai,Maui,0,616,0,616,County/Private,2658,23325,,171248
+M-8,Lava Fields,Maui,0,0,176,176,Package Plant or IWS,0,6688,,48928
+M-9,Lava Fields,Maui,0,0,209,209,Package Plant or IWS,0,7942,,58102
+M-14,Aapueo Parkway,Maui,0,0,1207,1207,Private,0,45866,,335546
+M-15,Haliimaile,Maui,0,0,1802,1802,Private,0,68476,,500956
+M-10,East Haiku,Maui,0,0,253,253,Package Plant or IWS,0,9614,,70334
+M-11,East Haiku,Maui,0,0,99,99,Package Plant or IWS,0,3762,,27522
+M-12,Hana,Maui,0,0,108,108,Package Plant or IWS,0,4104,,30024
+M-13,East Haiku,Maui,0,0,108,108,Package Plant or IWS,0,4104,,30024
+Mo-1,East Molokai,Molokai,0,0,0,281,County,3524,10640,,78118
+Mo-2,West Molokai,Molokai,0,0,0,100,County,10907,3786,,27800
+O-1,Waimanalo Bay Beach Park,Oahu,181,0,0,181,County,2174,6854,,50318
+O-2,Kalaheo Avenue,Oahu,127,0,0,127,County,3244,4809,,35306
+O-3,Kahaluu-Waikane,Oahu,0,101,31,120,County,13491,4544,,33360
+O-4,Kahaluu-Waikane,Oahu,0,224,0,345,County,5688,13063,,95910
+O-18,Kaaawa,Oahu,144,0,0,144,Package Plant or IWS,0,5472,,40032
+O-19,Hauula,Oahu,63,0,0,64,Package Plant or IWS,0,2432,,17792
+O-5,Laie,Oahu,360,0,0,363,Package Plant or IWS,3383,13745,,100914
+O-20,Sunset Beach,Oahu,425,0,0,425,Package Plant or IWS,0,16150,,118150
+O-21,Kawailoa,Oahu,70,0,0,70,Package Plant or IWS,0,2660,,19460
+O-6,Haleiwa,Oahu,181,0,0,181,County,2918,6854,,50318
+O-7,Waialua District Park,Oahu,335,0,0,335,County,3098,12685,,93130
+O-8,Mokuleia,Oahu,396,0,0,396,County,2281,14994,,110088
+O-9,Makua Valley,Oahu,77,0,0,77,County,14508,2916,,21406
+O-10,Kaupuni Neighborhood Park,Oahu,86,102,0,188,County,3891,7119,,52264
+O-11,Keanui Drive-Hoomahana Street,Oahu,886,0,0,889,County,1384,33662,Yes,247142
+O-12,Kaimuki: Kapiolani Community College,Oahu,0,0,58,58,County,22130,2196,Yes,16124
+O-13,Kapiolani Park,Oahu,25,0,0,25,County,53982,947,Yes,6950
+O-14,Diamond Head,Oahu,0,139,0,139,County,11780,5263,Yes,38642
+K-13,Koloa-Poipu,Kauai,0,77,0,77,Private,0,2926,,21406
+K-14,Omao-Kukuiula,Kauai,0,3,61,64,Private,0,2432,,17792
+K-15,Koloa-Poipu,Kauai,0,343,5,348,Private,0,13224,,96744
+K-16,Omao-Kukuiula,Kauai,0,0,115,115,Private,0,4370,,31970
+K-17,Omao-Kukuiula,Kauai,0,0,520,520,Private,0,19760,,144560
+K-18,Kalaheo-Kalawai Park,Kauai,0,0,38,38,Private,0,1444,,10564
+K-19,Kalaheo-Kalawai Park,Kauai,0,0,1325,1325,Private,0,50350,,368350
+K-1,Kekaha-Waimea,Kauai,890,0,0,890,County,2433,33700,,247420
+K-11,Haena-Hanalei,Kauai,122,0,0,122,Package Plant or IWS,0,4636,,33916
+K-20,Haena-Hanalei,Kauai,204,0,0,204,Private,0,7752,,56712
+K-12,Kalihiwai-Kilauea,Kauai,0,0,572,572,Package Plant or IWS,0,21736,,159016
+K-2,Kapaa Town,Kauai,0,1793,0,1793,County,1726,67892,,498454
+K-3,Kapahi,Kauai,0,55,0,55,County,14165,2083,,15290
+K-4,Kapaa Town,Kauai,0,237,0,237,County,4903,8974,,65886
+K-5,Wailua Homesteads,Kauai,652,0,0,652,County,1543,24688,,181256
+K-6,Wailua Homesteads,Kauai,149,36,0,185,County,4354,7005,,51430
+K-7,Wailua Houselots,Kauai,325,584,0,909,County,1947,34419,,252702
+K-8,Lihue,Kauai,0,70,0,70,County/Private,3697,2651,,19460
+K-9,Lihue,Kauai,0,348,0,348,County/Private,2057,13177,,96744
+K-10,Hanamaulu-Lower Puhi,Kauai,0,257,0,257,County/Private,3751,9731,,71446
+O-15,Judd Hillside-Lowrey Avenue,Oahu,74,119,0,193,County,7143,7308,,53654
+O-16,Aiea Heights,Oahu,0,102,0,102,County,22319,3862,,28356
+O-17,,Oahu,0,0,20,37,County,26624,1401,,10286
+M-5,North Wailuku,Maui,0,7,0,7,County,88301,265,,1946
+M-6,Waihee-Waikapu,Maui,0,8,0,8,County,0,304,Yes,2224
+H-42,,,0,0,0,0,,0,,,0
