@@ -1,0 +1,380 @@
+{
+  "main": {
+    "id": "ff5fed3dafc4ea29",
+    "type": "split",
+    "children": [
+      {
+        "id": "4167b680ddc8cddd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40ff763d28b2f46b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WRRC with Sean Dana video 2026-mar-27.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WRRC with Sean Dana video 2026-mar-27"
+            }
+          },
+          {
+            "id": "42bb2f98bbd9c0fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flow Sim Network.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Flow Sim Network"
+            }
+          },
+          {
+            "id": "a172b409ae76e5df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-apr-27 Meeting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-apr-27 Meeting"
+            }
+          },
+          {
+            "id": "43edca4320ded0ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conveyance Modeling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Conveyance Modeling"
+            }
+          },
+          {
+            "id": "e1f855c88b36a525",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neighorhood Pump Stations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Neighorhood Pump Stations"
+            }
+          },
+          {
+            "id": "dd0910ed801897c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-may-04.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-may-04"
+            }
+          },
+          {
+            "id": "f1eb78d9b5ca0fb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-may-05.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-may-05"
+            }
+          },
+          {
+            "id": "090a36a027d7d954",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neighborhood Pump Stations ADVANCED.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Neighborhood Pump Stations ADVANCED"
+            }
+          },
+          {
+            "id": "b6a3a33072f2e75b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Second restriction for existing NETWORK.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Second restriction for existing NETWORK"
+            }
+          },
+          {
+            "id": "61f2b74ecd3dc69e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Major Roads HPMS as proxy for Collectors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Major Roads HPMS as proxy for Collectors"
+            }
+          },
+          {
+            "id": "6f548a2183f40c25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HPMS and Terminal Nodes PRESSURIZED Lines.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HPMS and Terminal Nodes PRESSURIZED Lines"
+            }
+          },
+          {
+            "id": "de974a06e23dc28a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conveyance Network Analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Conveyance Network Analysis"
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9815fe29a8a7d2b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "253045f46ff01ca3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5cc1bbb516504ab5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0ca05ef8271bc949",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f0e37bece1ddc5f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 333.5
+  },
+  "right": {
+    "id": "44e1f60fc45755ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "f441fe795f069c15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5901b79416d63de2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Meeting 2026-mar-02.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Meeting 2026-mar-02"
+            }
+          },
+          {
+            "id": "afb35beef50b7f53",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Meeting 2026-mar-02.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Meeting 2026-mar-02"
+            }
+          },
+          {
+            "id": "c4da8d8968e102e3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "24553bf0e627733e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c8338379524c00c3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Meeting 2026-mar-02.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Meeting 2026-mar-02"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "61f2b74ecd3dc69e",
+  "lastOpenFiles": [
+    "HPMS and Terminal Nodes PRESSURIZED Lines.md",
+    "Meeting 2026-05-11.md",
+    "Conveyance Network Analysis.md",
+    "2026-05-26.md",
+    "Act 217 2026-may-18.md",
+    "Robert Meeting 2026-05-18.md",
+    "Pasted image 20260514203605.png",
+    "Pasted image 20260514202236.png",
+    "Tabulating and classifying TMK Points.md",
+    "Pasted image 20260514202021.png",
+    "Pasted image 20260514201136.png",
+    "Pasted image 20260514200947.png",
+    "Pasted image 20260514200915.png",
+    "Pasted image 20260514200708.png",
+    "Pasted image 20260514200555.png",
+    "Pasted image 20260514200052.png",
+    "Pasted image 20260514195939.png",
+    "Major Roads HPMS as proxy for Collectors.md",
+    "2026-may-05.md",
+    "Second restriction for existing NETWORK.md",
+    "Neighborhood Pump Stations ADVANCED.md",
+    "Neighorhood Pump Stations.md",
+    "2026-may-04.md",
+    "2026-apr-27 Meeting.md",
+    "Conveyance Modeling.md",
+    "Flow Sim Network.md",
+    "WRRC with Sean Dana video 2026-mar-27.md",
+    "2026-apr-28 Matrix.md",
+    "HNL 2026-mar-09.md",
+    "Hawaii County 2026-mar-31.md",
+    "2026-apr-04.md",
+    "2026-apr-21.md",
+    "Claude flow answers for Robert.md",
+    "Kaheawai meeting 2026-mar-13.md",
+    "Meeting 2026-mar-04 w Maui.md",
+    "Meeting 2026-mar-23.md"
+  ]
+}
