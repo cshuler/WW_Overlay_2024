@@ -7,7 +7,7 @@ This repository contains the data, code, and documentation supporting the Act 21
 
 The interactive web tool is publicly accessible at **[https://seagrant.soest.hawaii.edu/cesspool-tool-wastewater-overlay/](https://seagrant.soest.hawaii.edu/cesspool-tool-wastewater-overlay/)**.
 
-More information about the Hawaii Cesspool Prioritization TOol is availabe at **[hawaiicesspooltool.org](http://www.hawaiicesspooltool.org)**.
+More information about the Hawaii Cesspool Prioritization Tool is availabe at **[hawaiicesspooltool.org](http://www.hawaiicesspooltool.org)**.
 
 ## Repository Contents
 - **Data/** — Master project areas spreadsheet, cost model data, and GIS-derived inputs
