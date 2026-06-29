@@ -1,5 +1,0 @@
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="22a4010e-ee8b-364d-957e-a9374a08d0f2")}catch(e){}}();
-define(["exports","./e_file_viewer_static_scl_page_file"],(function(t,e){"use strict";function n(t){return t.ns("user_metadata")}function a(t){return Object.keys(t)}function r(t){const e=a(t.metadata),n={};return e.forEach((e=>{const a=JSON.parse(t.metadata[e]);null!=a&&(n[e]=a)})),n}t.getUserMetadata=function(t,a){return function(t,a){return n(new e.DefaultUserApiV2Client(a)).rpc("user_metadata/get",t,{})}({metadata:t},a).then(r)},t.setUserMetadata=function(t,u){return function(t,a){return n(new e.DefaultUserApiV2Client(a)).rpc("user_metadata/set",t,{})}({metadata:function(t){const e=function(t){const e=a(t),n={};return e.forEach((e=>{null!=t[e]&&(n[e]=t[e])})),n}(t),n=a(e),r={};return n.forEach((t=>{r[t]=JSON.stringify(e[t])})),r}(t)},u).then(r)}}));
-//# sourceMappingURL=c_user_metadata_api.js-vfl8AY3wn.map
-
-//# debugId=22a4010e-ee8b-364d-957e-a9374a08d0f2
