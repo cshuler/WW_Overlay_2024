@@ -18,7 +18,7 @@ More information about the Hawaii Cesspool Prioritization Tool is availabe at **
 The Act 217 Sewer Expansion Overlay identifies 103 Potential Project Areas statewide covering approximately 39,300 cesspools. Each area is assigned a planning status and a cost feasibility tier based on a planning-level cost model with five infrastructure components: collection pipe, conveyance, treatment, neighborhood pump stations, and regional pump stations.
 
 ## Legislative Report
-The full report to the Hawaiʻi State Legislature is available at [hawaiicesspooltool.org](http://www.hawaiicesspooltool.org).  (FIX Link WHen Report is Published!)
+The full report to the Hawaiʻi State Legislature is available at [hawaiicesspooltool.org](http://www.hawaiicesspooltool.org).  (Chris - need to fix Link When Report is Published!)
 
 ## Citation
 Shuler, C., Schriber, A., Litt, R., Lall, J. (2026). *Report to the Hawaiʻi State Legislature: Development of the Act 217 Sewer Expansion Overlay of the Hawaiʻi Cesspool Prioritization Tool.* University of Hawaiʻi Water Resources Research Center and Sea Grant College Program.
