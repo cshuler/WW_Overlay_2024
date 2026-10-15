@@ -20,6 +20,8 @@ The Act 217 Sewer Expansion Overlay identifies 103 Potential Project Areas state
 ## Legislative Report
 
 The full report to the Hawaiʻi State Legislature is available here: 
+
+
 **[Download the Act 217 Sewer Expansion Overlay Legislative Report](https://raw.githubusercontent.com/cshuler/WW_Overlay_2024/main/Act_217_WRRC_Legislative_Report_LR-2026-01.pdf)**
 
 ## Citation
