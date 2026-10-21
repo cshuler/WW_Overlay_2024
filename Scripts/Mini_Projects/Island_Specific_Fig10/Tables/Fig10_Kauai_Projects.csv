@@ -1,0 +1,22 @@
+Project ID,Project Area,Island,Planning Status,Priority 1 Cesspools,Priority 2 Cesspools,Priority 3 Cesspools,Total Cesspools,Dominant Priority,Avg Priority Weight,Impact Score,MRC (Relative Cost),Cost Tier (1-5),Cost Tier Symbol
+K-2,Kapaa/Kawaihau,Kauaʻi,No Active Plans (N),0,1793,0,1793,2,2.0,3586.0,0.65,3,(3) - $$$
+K-1,Kekaha,Kauaʻi,No Active Plans (N),890,0,0,890,1,3.0,2670.0,0.81,4,(4) - $$$$
+K-7,Wailua Homesteads,Kauaʻi,No Active Plans (N),325,584,0,909,2,2.3575357535753576,2143.0,1.03,4,(4) - $$$$
+K-5,Wailua,Kauaʻi,No Active Plans (N),652,0,0,652,1,3.0,1956.0,0.42,2,(2) - $$
+K-19,Kalaheo,Kauaʻi,No Active Plans (N),0,0,1325,1325,3,1.0,1325.0,0.82,4,(4) - $$$$
+K-9,"Pua Loke, Ulu Mahi, Ulu Ko",Kauaʻi,No Active Plans (N),0,348,0,348,2,2.0,696.0,0.84,4,(4) - $$$$
+K-15,Koloa,Kauaʻi,No Active Plans (N),0,343,5,348,2,1.985632183908046,691.0,0.58,3,(3) - $$$
+K-20,Hanalei,Kauaʻi,Under Evaluation (E),204,0,0,204,1,3.0,612.0,1.37,4,(4) - $$$$
+K-12,Kilauea,Kauaʻi,No Active Plans (N),0,0,572,572,3,1.0,572.0,1.04,4,(4) - $$$$
+K-17,Lawai,Kauaʻi,No Active Plans (N),0,0,520,520,3,1.0,520.0,1.03,4,(4) - $$$$
+K-6,Olohena,Kauaʻi,No Active Plans (N),149,36,0,185,1,2.8054054054054056,519.0,1.23,4,(4) - $$$$
+K-10,Puhi,Kauaʻi,No Active Plans (N),0,257,0,257,2,2.0,514.0,0.79,3,(3) - $$$
+K-4,Kapaa,Kauaʻi,No Active Plans (N),0,237,0,237,2,2.0,474.0,0.59,3,(3) - $$$
+K-18,Anahola,Kauaʻi,No Active Plans (N),0,201,0,201,2,2.0,402.0,1.45,5,(5) - $$$$$
+K-11,Haena,Kauaʻi,No Active Plans (N),122,0,0,122,1,3.0,366.0,1.14,4,(4) - $$$$
+K-21,Hanapepe,Kauaʻi,No Active Plans (N),0,0,339,339,3,1.0,339.0,0.2,1,(1) - $
+K-16,Omao,Kauaʻi,No Active Plans (N),0,0,231,231,3,1.0,231.0,1.2,4,(4) - $$$$
+K-13,Kipuka St,Kauaʻi,No Active Plans (N),0,77,0,77,2,2.0,154.0,0.57,3,(3) - $$$
+K-8,Lihue,Kauaʻi,No Active Plans (N),0,70,0,70,2,2.0,140.0,1.12,4,(4) - $$$$
+K-3,Apopo Rd,Kauaʻi,No Active Plans (N),0,55,0,55,2,2.0,110.0,0.95,4,(4) - $$$$
+K-14,Hoona Rd,Kauaʻi,No Active Plans (N),0,3,61,64,3,1.046875,67.0,0.66,3,(3) - $$$

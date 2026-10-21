@@ -1,0 +1,43 @@
+Project ID,Project Area,Island,Planning Status,Priority 1 Cesspools,Priority 2 Cesspools,Priority 3 Cesspools,Total Cesspools,Dominant Priority,Avg Priority Weight,Impact Score,MRC (Relative Cost),Cost Tier (1-5),Cost Tier Symbol
+H-14,South Hilo,Hawaiʻi,No Active Plans (N),0,737,4469,5206,3,1.141567422205148,5943.0,0.57,3,(3) - $$$
+H-17,Holualoa,Hawaiʻi,No Active Plans (N),1543,5,1,1549,1,2.9954809554551325,4640.0,0.53,3,(3) - $$$
+H-4,Kailua-Kona,Hawaiʻi,No Active Plans (N),680,0,0,680,1,3.0,2040.0,0.61,3,(3) - $$$
+H-12,West Hilo,Hawaiʻi,No Active Plans (N),0,0,1919,1919,3,1.0,1919.0,0.56,3,(3) - $$$
+H-26,Kalaoa,Hawaiʻi,No Active Plans (N),0,0,1616,1616,3,1.0,1616.0,1.08,4,(4) - $$$$
+H-18,Hawaiian Beaches,Hawaiʻi,Under Evaluation (E),0,0,1152,1152,3,1.0,1152.0,1.38,4,(4) - $$$$
+H-5,Kealakehe HHL,Hawaiʻi,No Active Plans (N),110,393,0,503,2,2.2186878727634194,1116.0,0.48,2,(2) - $$
+H-6,Honokaa,Hawaiʻi,No Active Plans (N),0,0,631,631,3,1.0,631.0,1.19,4,(4) - $$$$
+H-38,Tiki Gardens,Hawaiʻi,Under Evaluation (E),0,0,624,624,3,1.0,624.0,1.73,5,(5) - $$$$$
+H-40,Waimea,Hawaiʻi,Under Evaluation (E),0,0,585,585,3,1.0,585.0,1.15,4,(4) - $$$$
+H-13,Hilo,Hawaiʻi,No Active Plans (N),0,198,0,198,2,2.0,396.0,0.6,3,(3) - $$$
+H-15,Keaukaha,Hawaiʻi,No Active Plans (N),0,189,0,189,2,2.0,378.0,0.61,3,(3) - $$$
+H-42,Puako,Hawaiʻi,Under Evaluation (E),120,0,0,120,1,3.0,360.0,1.34,4,(4) - $$$$
+H-27,Haiwi,Hawaiʻi,No Active Plans (N),0,0,331,331,3,1.0,331.0,1.14,4,(4) - $$$$
+H-25,Kealakekua,Hawaiʻi,No Active Plans (N),0,0,314,314,3,1.0,314.0,1.33,4,(4) - $$$$
+H-11,Kaūmana,Hawaiʻi,No Active Plans (N),0,0,305,305,3,1.0,305.0,0.88,4,(4) - $$$$
+H-39,Waiʻaka,Hawaiʻi,Under Evaluation (E),10,0,273,283,3,1.0706713780918728,303.0,1.44,5,(5) - $$$$$
+H-16,Kuakini Heights,Hawaiʻi,No Active Plans (N),0,148,0,148,2,2.0,296.0,0.68,3,(3) - $$$
+H-3,Hillcrest,Hawaiʻi,No Active Plans (N),88,0,0,88,1,3.0,264.0,0.58,3,(3) - $$$
+H-31,Ola Mamalahoa Hwy West,Hawaiʻi,Under Evaluation (E),0,0,253,253,3,1.0,253.0,0.99,4,(4) - $$$$
+H-30,Puʻukapu Homesteads East,Hawaiʻi,Under Evaluation (E),0,0,244,244,3,1.0,244.0,0.87,4,(4) - $$$$
+H-41,East Waimea,Hawaiʻi,Under Evaluation (E),0,0,225,225,3,1.0,225.0,1.66,5,(5) - $$$$$
+H-28,Kapaau,Hawaiʻi,No Active Plans (N),0,0,222,222,3,1.0,222.0,1.42,5,(5) - $$$$$
+H-19,Nanawele Estates,Hawaiʻi,Under Evaluation (E),0,0,213,213,3,1.0,213.0,2.08,5,(5) - $$$$$
+H-8,Honomu,Hawaiʻi,No Active Plans (N),0,0,202,202,3,1.0,202.0,1.41,4,(4) - $$$$
+H-36,Keaau,Hawaiʻi,Under Evaluation (E),0,0,188,188,3,1.0,188.0,1.68,5,(5) - $$$$$
+H-23,Kīloa,Hawaiʻi,No Active Plans (N),0,0,187,187,3,1.0,187.0,1.25,4,(4) - $$$$
+H-20,Seaview,Hawaiʻi,No Active Plans (N),0,0,187,187,3,1.0,187.0,2.01,5,(5) - $$$$$
+H-29,Puʻukapu Homesteads,Hawaiʻi,Under Evaluation (E),0,0,181,181,3,1.0,181.0,1.16,4,(4) - $$$$
+H-9,Wainaku West,Hawaiʻi,No Active Plans (N),0,0,170,170,3,1.0,170.0,0.65,3,(3) - $$$
+H-10,Wainaku,Hawaiʻi,No Active Plans (N),0,0,166,166,3,1.0,166.0,0.67,3,(3) - $$$
+H-32,Paauilo,Hawaiʻi,No Active Plans (N),0,0,139,139,3,1.0,139.0,1.5,5,(5) - $$$$$
+H-34,Ponahawai,Hawaiʻi,No Active Plans (N),0,0,129,129,3,1.0,129.0,1.61,5,(5) - $$$$$
+H-33,Laupahoehoe,Hawaiʻi,No Active Plans (N),0,0,129,129,3,1.0,129.0,1.41,4,(4) - $$$$
+H-35,Kaūmana Homesteads,Hawaiʻi,No Active Plans (N),0,0,125,125,3,1.0,125.0,1.24,4,(4) - $$$$
+H-22,Kaʻohe,Hawaiʻi,No Active Plans (N),0,0,120,120,3,1.0,120.0,1.54,5,(5) - $$$$$
+H-7,Paauhau,Hawaiʻi,No Active Plans (N),0,0,115,115,3,1.0,115.0,1.73,5,(5) - $$$$$
+H-24,Captain Cook,Hawaiʻi,No Active Plans (N),0,0,110,110,3,1.0,110.0,1.64,5,(5) - $$$$$
+H-37,Mountain View,Hawaiʻi,Under Evaluation (E),0,0,109,109,3,1.0,109.0,1.71,5,(5) - $$$$$
+H-1,Pahala,Hawaiʻi,Planned or Underway (P),0,0,58,58,3,1.0,58.0,1.41,4,(4) - $$$$
+H-2,Naalehu,Hawaiʻi,Planned or Underway (P),0,0,46,46,3,1.0,46.0,1.83,5,(5) - $$$$$
+H-21,Kehena,Hawaiʻi,No Active Plans (N),0,0,44,44,3,1.0,44.0,3.31,5,(5) - $$$$$
